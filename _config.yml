@@ -32,6 +32,7 @@ url: "https://ser-rse-bridge.github.io" # the base hostname & protocol for your 
 theme: minima
 plugins:
   - jekyll-feed
+  - jekyll-github-metadata
 
 # Exclude from processing.
 # The following items will not be processed, by default.
@@ -52,3 +53,18 @@ plugins:
 #   - vendor/cache/
 #   - vendor/gems/
 #   - vendor/ruby/
+
+# This is needed to generate output for future events
+future: true
+
+collections:
+  terms:
+    output: true
+    permalink: /terms/:slug
+
+defaults:
+  - scope:
+      path: ""
+      type: "terms"
+    values:
+      layout: "term"
