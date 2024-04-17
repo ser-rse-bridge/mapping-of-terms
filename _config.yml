@@ -54,6 +54,8 @@ plugins:
 #   - vendor/gems/
 #   - vendor/ruby/
 
+repository: ser-rse-bridge/mapping-of-terms
+
 # This is needed to generate output for future events
 future: true
 
