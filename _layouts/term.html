@@ -2,34 +2,59 @@
 layout: page
 ---
 
-<table>
+<h2>Terms</h2>
+
+<table style="width:100%">
     <tr>
-        <td><strong>SE Fundamental</strong></td><td><strong>RSE Equivalent</strong></td>
+        <th style="width:50%">SE Fundamental</th><th style="width:50%">RSE Equivalent</th>
     </tr>
     <tr>
-        <td><strong>{{ page.se-fundamental }}</strong></td><td><strong>{{ page.rse-equivalent }}</strong></td>
+        <td>{% include array_to_ul.html array=page.se-fundamental %}</td><td>{% include array_to_ul.html array=page.rse-equivalent %}</td>
     </tr>
 </table>
+
+<h2>Details</h2>
+
 <table>
     <tr>
         <td>SWEBOK section</td><td>{{ page.swebok-section }}</td>
     </tr>
     <tr>
-        <td>RSE usage</td><td>{{ page.rse-usage }}</td>
+        <td>Fundamental description</td><td>{{ page.fundamental-description }}</td>
     </tr>
     <tr>
         <td>RSE practice</td><td>{{ page.rse-practice }}</td>
     </tr>
     <tr>
-        <td>Gap?</td><td>{{ page.gap }}</td>
+        <td>RSE awareness (source)</td><td>{{ page.rse-awareness }} ({{ page.rse-awareness-source }})</td>
+    </tr>
+    <tr>
+        <td>RSE usage (source)</td><td>{{ page.rse-usage }} ({{ page.rse-usage-source }})</td>
+    </tr>
+    <tr>
+        <td>SER potential (source)</td><td>{{ page.ser-potential }} ({{ page.ser-potential-source }})</td>
+    </tr>        
+    <tr>
+        <td>SER opportunities</td><td>{{ page.ser-opportunities }}</td>
     </tr>
 </table>
+
+{% if page.references and page.references != empty %}
+<h2>References</h2>
+{% include array_to_ul.html array=page.references %}
+{% endif %}
 
 {% assign test-content = content | normalize_whitespace | strip_newlines %}
 {% if test-content and test-content != "" %}
 <h2>Notes</h2>
 {{ content }}
 {% endif %}
+
+<p align="center" style="margin-top: 1em">
+    Last reviewed: {{ page.last-reviewed | date: "%Y-%m-%d" }}<br>
+    Last modified: <em>to be added</em><br>
+    <a href="{{site.github.repository_url}}/blob/main/{{page.path}}">Edit this page on GitHub</a>
+</p>
 
 <nav align="center">
     {% if page.previous.url %}
@@ -40,5 +65,3 @@ layout: page
     <a href="{{ page.next.url | relative_url }}">Next ({{ page.next.title }}) ></a>
     {% endif %}
 </nav>
-
-<p align="center" style="margin-top: 1em"><a href="{{site.github.repository_url}}/blob/main/{{page.path}}">Edit this page on GitHub</a></p>

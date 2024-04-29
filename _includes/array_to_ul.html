@@ -1,0 +1,14 @@
+{% comment %}
+    array_to_ul: emit an array of strings as an HTML unordered list
+
+    arguments:
+        array: an array of string values
+{% endcomment %}
+
+{%- if include.array and include.array != empty -%}
+    <ul>
+        {% for i in include.array %}
+        <li>{{ i }}</li>
+        {% endfor %}
+    </ul>
+{%- endif -%}

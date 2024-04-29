@@ -13,12 +13,12 @@ layout: home
 
 {% for term in site.terms sort %}
 <section style="margin-top:1em">
-<table>
+<table style="width:100%">
     <tr>
-        <td><strong>SER Term</strong></td><td><strong>RSE Term</strong></td>
+        <th style="width:50%">SE Fundamental</th><th style="width:50%">RSE Equivalent</th>
     </tr>
     <tr>
-        <td><strong>{{ term.ser-term }}</strong></td><td><strong>{{ term.rse-term }}</strong></td>
+        <td>{% include array_to_ul.html array=term.se-fundamental %}</td><td>{% include array_to_ul.html array=term.rse-equivalent %}</td>
     </tr>
 </table>
 
