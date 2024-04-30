@@ -23,14 +23,19 @@ In an attempt to be systematic, we're starting with the [Software Engineering Bo
 ## Summary list of terms ([browse by term]({{ first.url | relative_url }}))
 
 {% for term in site.terms sort %}
-<section style="margin-top:1em;width:100%">
-<table style="width:100%">
+<section style="margin-top:1em">
+<h3>{{ term.title }}</h3>
+<table style="table-layout: fixed; width: 100%">
+    <thead>
     <tr>
         <th style="width:50%">SE Fundamental</th><th style="width:50%">RSE Equivalent</th>
     </tr>
+    </thead>
+    <tbody>
     <tr>
         <td>{% include array_to_ul.html array=term.se_fundamental %}</td><td>{% include array_to_ul.html array=term.rse_equivalent %}</td>
     </tr>
+    </tbody>
 </table>
 
 <p align="center">
