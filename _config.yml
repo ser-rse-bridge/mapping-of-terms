@@ -18,21 +18,41 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: SER-RSE Maping of Terms
-email: bernholdtde@ornl.gov
+title: "Research Software Engineering: Bridging Knowledge Gaps"
+# email: bernholdtde@ornl.gov # We really don't have a single point of email contact for the seminar as a whole
 description: >- # this means to ignore newlines until "baseurl:"
-  An attempt to map terminology between the software engineering research (SER) and
-  research software engineering (RSE) communities.
+  This website collects outputs and resources to help bridge between
+  the software engineering research (SER) and research software engineering (RSE)
+  communities.  This effort originated in the April 2024 Dagstuhl Seminar 
+  "[Research Software Engineering: Bridging Knowledge Gaps](https://www.dagstuhl.de/24161)" 
+  (number 24161).
 baseurl: "/mapping-of-terms" # the subpath of your site, e.g. /blog
 url: "https://ser-rse-bridge.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 # twitter_username: jekyllrb
 # github_username:  jekyll
 
 # Build settings
-theme: minima
+# theme: minima
+# theme: minimal-mistakes-jekyll
+remote_theme: "mmistakes/minimal-mistakes@4.24.0"
+
+#minimal_mistakes_skin: "default" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
+minimal_mistakes_skin: "air"
+
+subtitle: Dagstuhl Seminar 24161, April 2024
+name: The participants in Dagstuhl seminar 24161
+
+teaser: /assets/images/LZI-Logo.jpg
+logo: /assets/images/LZI-Logo.jpg
+og_image: /assets/images/LZI-Logo.jpg
+
 plugins:
   - jekyll-feed
   - jekyll-github-metadata
+  - jekyll-include-cache
+  - jekyll-sitemap
+  - jekyll-remote-theme
+
 
 # Exclude from processing.
 # The following items will not be processed, by default.
@@ -42,7 +62,7 @@ plugins:
 # Excluded items can be processed by explicitly listing the directories or
 # their entries' file path in the `include:` list.
 #
-exclude:
+# exclude:
 #   - .sass-cache/
 #   - .jekyll-cache/
 #   - gemfiles/
@@ -53,12 +73,15 @@ exclude:
 #   - vendor/cache/
 #   - vendor/gems/
 #   - vendor/ruby/
-  - README.md
+#  - README.md
 
 repository: ser-rse-bridge/mapping-of-terms
 
 # This is needed to generate output for future events
 future: true
+
+# Set default date format to YYYY-MM-DD (ISO 8601)
+date_format: "%Y-%m-%d"
 
 collections:
   terms:
@@ -71,3 +94,15 @@ defaults:
       type: "terms"
     values:
       layout: "term"
+
+footer:
+  links:
+    - label: "Dagstuhl Seminar 24161"
+      icon: fas fa-link
+      url: https://www.dagstuhl.de/24161
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/ser-rse-bridge/mapping-of-terms"
+#    - label: "Licensed CC-BY unless otherwise indicated"
+#      icon: "fab fa-creative-commons-by"
+#      url: "https://creativecommons.org/licenses/by/4.0/"
