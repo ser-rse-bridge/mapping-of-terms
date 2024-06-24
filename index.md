@@ -25,7 +25,7 @@ In an attempt to be systematic, we're starting with the [Software Engineering Bo
 {% for term in site.terms sort %}
 <section style="margin-top:1em">
 <h3>{{ term.title }}</h3>
-<table width="100%">
+<table style="display:table">
     <thead>
     <tr>
         <th style="width:50%">SE Fundamental</th>
