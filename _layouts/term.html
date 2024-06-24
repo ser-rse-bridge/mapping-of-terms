@@ -4,15 +4,27 @@ layout: single
 
 <h2>Terms</h2>
 
-<table style="width:100%">
+<table>
     <thead>
     <tr>
-        <th style="width:50%">SE Fundamental</th><th style="width:50%">RSE Equivalent</th>
+        <th style="width:50%">SE Fundamental</th>
+        <th style="width:50%">RSE Equivalent</th>
     </tr>
     </thead>
     <tbody>
     <tr>
-        <td>{% include array_to_ul.html array=page.se_fundamental %}</td><td>{% include array_to_ul.html array=page.rse_equivalent %}</td>
+        <td>{% if page.se_fundamental and page.se_fundamental != empty %}
+                {% include array_to_ul.html array=page.se_fundamental %}
+            {% else %}
+                <em style="color:red">Not provided</em>
+            {% endif %}
+        </td>
+        <td>{% if page.rse_equivalent and page.rse_equivalent != empty %}
+                {% include array_to_ul.html array=page.rse_equivalent %}
+            {% else %}
+                <em style="color:red">Not provided</em>
+            {% endif %}
+        </td>
     </tr>
     </tbody>
 </table>
@@ -20,26 +32,82 @@ layout: single
 <h2>Details</h2>
 <table>
     <tr>
-        <td>SWEBOK section</td><td>{{ page.swebok_section }}</td>
+        <td>SWEBOK section</td>
+        <td>{% if page.swebok_section and page.swebok_section != empty %}
+                {{ page.swebok_section }}
+            {% else %}
+                <em style="color:red">Not provided</em>
+            {% endif %}
+        </td>
     </tr>
     <tr>
-        <td>Fundamental description</td><td>{{ page.fundamental_description }}</td>
+        <td>Fundamental description</td>
+        <td>{% if page.fundamental_description and page.fundamental_description != empty %}
+                {{ page.fundamental_description }}
+            {% else %}
+                <em  style="color:red">Not provided</em>
+            {% endif %}
+        </td>
     </tr>
     <tr>
-        <td>RSE practice</td><td>{{ page.rse_practice }}</td>
+        <td>RSE practice</td>
+        <td>{% if page.rse_practice and page.rse_practice != empty %}
+                {{ page.rse_practice }}
+            {% else %}
+                <em style="color:red">Not provided</em>
+            {% endif %}
+        </td>
     </tr>
     <tr>
-        <td>RSE awareness (source)</td><td>{{ page.rse_awareness }} ({{ page.rse_awareness_source }})</td>
+        <td>RSE&nbsp;awareness&nbsp;(source)</td>
+        <td>{%- if page.rse_awareness and page.rse_awareness != empty -%}
+                {{ page.rse_awareness }}
+            {%- else -%}
+                <em style="color:red">Not provided</em>
+            {%- endif -%}
+            {%- if page.rse_awareness_source and page.rse_awareness_source != empty -%}
+                &nbsp;({{ page.rse_awareness_source }})
+            {%- else -%}
+                <em style="color:red">&nbsp;(Not provided)</em>
+            {%- endif -%}
+        </td>
     </tr>
     <tr>
-        <td>RSE usage (source)</td><td>{{ page.rse_usage }} ({{ page.rse_usage_source }})</td>
+        <td>RSE&nbsp;usage&nbsp;(source)</td>
+        <td>{%- if page.rse_usage and page.rse_usage != empty -%}
+                {{ page.rse_usage }}
+            {%- else -%}
+                <em style="color:red">Not provided</em>
+            {%- endif -%}
+            {%- if page.rse_usage_source and page.rse_usage_source != empty -%}
+                &nbsp;({{ page.rse_usage_source }})
+            {%- else -%}
+                <em style="color:red">&nbsp;(Not provided)</em>
+            {%- endif -%}
+        </td>
     </tr>
     <tr>
-        <td>SER potential (source)</td><td>{{ page.ser_potential }} ({{ page.ser_potential_source }})</td>
-    </tr>        
-    <tr>
-        <td>SER opportunities</td><td>{{ page.ser_opportunities }}</td>
+        <td>SER&nbsp;potential&nbsp;(source)</td>
+        <td>{%- if page.ser_potential and page.ser_potential != empty -%}
+                {{ page.ser_potential }}
+            {%- else -%}
+                <em style="color:red">Not provided</em>
+            {%- endif -%}
+            {%- if page.ser_potential_source and page.ser_potential_source != empty -%}
+                &nbsp;({{ page.ser_potential_source }})
+            {%- else -%}
+                <em style="color:red">&nbsp;(Not provided)</em>
+            {%- endif -%}
+        </td>
     </tr>
+    <tr>
+        <td>SER opportunities</td>
+        <td>{% if page.ser_opportunities and page.ser_opportunities != empty %}
+                {{ page.ser_opportunities }}
+            {% else %}
+                <em style="color:red">Not provided</em>
+            {% endif %}
+        </td>
 </table>
 
 {% if page.references and page.references != empty %}

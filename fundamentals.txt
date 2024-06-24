@@ -1,0 +1,164 @@
+KNOWLEDGE AREA 1, Software Requirements 
+
+
+Software requirements are commonly defined as the needs and constraints placed on a software product that contribute to the solution of some (real-world) problem. 
+
+A common classification scheme is to distinguish between functional requirements (aka. capabilities, features) and non-functional requirements (aka. quality requirements, constraints). The former describe the functions that the software is to execute, whereas the latter define quality characteristics (e.g., performance, security, usability, or reliability) or act to constrain a solution (e.g., regulatory or legal requirements, user demographics, or system load expectations). 
+It is also common to distinguish between user requirements and system requirements. The former are typically expressed in natural language and are understandable by the end users, whereas the latter are more detailed and technical, used by developers and engineers.
+Further classifications include, e.g., product vs. process requirements, or mandatory vs. optional requirements (aka. nice-to-have features). 
+ 
+The fundamentals of requirements engineering ensure that the final product aligns with the stakeholders' needs, is feasible to implement, and maintains high quality throughout the development process.
+
+
+---
+Requirements Elicitation
+
+Concerned with the source of software requirements (e.g., goals, domain knowledge, stakeholders, environment) and how to collect them using elicitation techniques (e.g., interviews, scenarios, prototypes, observation, user stories).
+
+SWEBOK 1.3
+
+---
+Requirements Analysis
+
+Concerned with the process of analyzing requirements to detect and resolve conflicts between requirements, and to discover the bounds of the software and how it must interact with its environment. May include requirements classification, conceptual modeling, and requirements negotiation. The level of formality may range from natural text to precise mathematical notations.
+
+SWEBOK 1.4
+
+---
+Requirements Specification
+
+Concerned with producing a document that can be systematically reviewed, evaluated, and approved. Software requirements are often specified in natural language, but may be supplemented by formal or semi-formal descriptions.
+
+
+SWEBOK 1.5
+
+---
+Requirements Validation
+
+Examines the requirements specification to ensure that it defines the right software (e.g., the software that the users expect). May be done by inspection or reviews, (rapid) prototyping, or model analysis, depending on the methods used for requirements specification.
+
+SWEBOK 1.6
+
+---
+Requirements Tracing
+(aka. traceability)
+
+A requirement should be traceable backward to its source and forward to its implementing design entities.
+
+SWEBOK 1.7.4
+
+---
+Requirements Tools
+
+Support the requirements management through modeling, documentation, tracing, change management, etc.
+
+1.8
+
+Refs: IBM Doors
+
+
+
+KNOWLEDGE AREA 4, Software Testing 
+
+Software testing commonly refers to the dynamic verification that a program provides expected behaviors on a finite yet suitably selected set of test cases. The observed behavior may be checked against user needs (aka. validation), against a specification (aka. verification), or against the anticipated behavior from implicit requirements or expectations. A test oracle decides whether a program behaved correctly in a given test and accordingly results in a verdict of pass or fail.
+
+Test levels refer to the various stages of testing that a software product undergoes during its development lifecycle. Test levels may be classified according to the target of a test (aka. subject under test, SWEBOK 4.2.1) or its high-level objectives (SWEBOK 4.2.2).
+
+
+---
+Unit Testing 
+(aka. component testing, module testing)
+
+Verifies the functioning in isolation of software elements that are separately testable.
+
+SWEBOK 4.2.1.1
+
+---
+Integration Testing
+
+Verifies the interactions among software components.
+
+SWEBOK 4.2.1.2
+
+---
+System Testing
+
+Concerned with testing the behavior of an entire system. Includes interactions through external interfaces to, e.g., other applications, 
+hardware devices, or the operating environment.
+
+SWEBOK 4.2.1.3
+
+
+---
+Acceptance Testing
+(aka. qualification testing)
+
+Determines whether a system satisfies its acceptance criteria.
+
+SWEBOK 4.2.2.1
+
+
+---
+Alpha and Beta Testing
+
+Aims at collecting internal feedback or feedback from a restricted used group before the software is released to a broader audience. Both are specific forms of acceptance testing.
+
+SWEBOK 4.2.2.3 
+
+---
+Installation Testing 
+
+Verifies the software upon installation in the target environment.
+
+SWEBOK 4.2.2.2
+
+---
+Recovery Testing 
+
+Verifies software restart capabilities after a system crash. 
+
+SWEBOK 4.2.2.10
+
+---
+Usability Testing
+(aka. Human Computer Interaction Testing)
+
+Evaluates how easy it is for end users to learn and to use the software
+
+SWEBOK 4.2.2.13
+
+---
+Performance and Sress Testing 
+
+Verifies that the software meets the specified performance requirements. Stress testing is a special form of performance testing that exercises the software at maximum workload and beyond.
+
+SWEBOK 4.2.2.6 and 4.2.2.8
+
+----		
+Security Testing
+
+Verifies that the software is protected from any form of attacks.
+
+SWEBOK 4.2.2.7
+
+
+----	
+Configuration Testing
+
+Verifies the software under different configurations.
+
+SWEBOK 4.2.2.12
+
+----
+Regression Testing
+
+Selective retesting to verify that modifications have not caused unintended side-effects.
+
+SWEBOK 4.2.2.5
+
+----
+Back-to-Back Testing
+
+Testing in which two (or more) variants of a program are executed with the same inputs, the outputs are compared, and errors are analyzed in case of discrepancies.
+
+SWEBOK 4.2.2.9

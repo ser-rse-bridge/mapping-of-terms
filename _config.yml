@@ -74,6 +74,8 @@ plugins:
 #   - vendor/gems/
 #   - vendor/ruby/
 #  - README.md
+exclude:
+  - fundamentals.txt
 
 repository: ser-rse-bridge/mapping-of-terms
 

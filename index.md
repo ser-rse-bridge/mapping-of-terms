@@ -25,15 +25,27 @@ In an attempt to be systematic, we're starting with the [Software Engineering Bo
 {% for term in site.terms sort %}
 <section style="margin-top:1em">
 <h3>{{ term.title }}</h3>
-<table style="table-layout: fixed; width: 100%">
+<table width="100%">
     <thead>
     <tr>
-        <th style="width:50%">SE Fundamental</th><th style="width:50%">RSE Equivalent</th>
+        <th style="width:50%">SE Fundamental</th>
+        <th style="width:50%">RSE Equivalent</th>
     </tr>
     </thead>
     <tbody>
     <tr>
-        <td>{% include array_to_ul.html array=term.se_fundamental %}</td><td>{% include array_to_ul.html array=term.rse_equivalent %}</td>
+        <td>{% if term.se_fundamental and term.se_fundamental != empty %}
+                {% include array_to_ul.html array=term.se_fundamental %}
+            {% else %}
+                <em style="color:red">Not provided</em>
+            {% endif %}
+        </td>
+        <td>{% if term.rse_equivalent and term.rse_equivalent != empty %}
+                {% include array_to_ul.html array=term.rse_equivalent %}
+            {% else %}
+                <em style="color:red">Not provided</em>
+            {% endif %}
+        </td>
     </tr>
     </tbody>
 </table>
