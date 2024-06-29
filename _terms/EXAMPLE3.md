@@ -7,7 +7,8 @@ se_fundamental:
 fundamental_description: "all code should be singable"
 
 # Seems to need quotes, unfortunately
-swebok_section: "0.1.1.2.3"
+swebok_sections: 
+    - 0.1.1.2.3
 
 # array of synonyms or adjacent concepts
 # need a way of specifying that it is the same as the se_fundamental

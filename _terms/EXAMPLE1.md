@@ -10,7 +10,10 @@ se_fundamental:
 fundamental_description: "avoid stupid mistakes"
 
 # Seems to need quotes, unfortunately
-swebok_section: "3.1.4.1.5.9"
+swebok_sections: 
+    - 3.1.4.1.5.9
+    - 2.1
+    - 4
 
 # array of synonyms or adjacent concepts
 # need a way of specifying that it is the same as the se_fundamental

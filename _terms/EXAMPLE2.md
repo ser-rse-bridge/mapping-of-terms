@@ -7,7 +7,8 @@ se_fundamental:
 fundamental_description: "write documentation"
 
 # Seems to need quotes, unfortunately
-swebok_section: "2.7.1.8"
+swebok_sections: 
+    - 2.7.1.8
 
 # array of synonyms or adjacent concepts
 # need a way of specifying that it is the same as the se_fundamental

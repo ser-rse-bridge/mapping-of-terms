@@ -13,11 +13,11 @@ Many in the research software engineering (RSE) community have picked up their u
 
 We're developing a mapping between terminology used in the two communities.  For each term, we're trying to gauge the extent to which the RSE community is aware of these fundamentals of software engineering and uses them, along with the perceived potential for software engineering research to improve usage in RS.
 
-In an attempt to be systematic, we're starting with the [Software Engineering Body of Knowledge](https://www.computer.org/education/bodies-of-knowledge/software-engineering) (SWEBOK) as the primary source of terms and their meanings from the SE community.  Once we've covered the terms from SWEBOK, we'll open it to other sources, though we'll always prefer sources that will help us be systematic.
+To be systematic, we're starting with the [Software Engineering Body of Knowledge](https://www.computer.org/education/bodies-of-knowledge/software-engineering) (SWEBOK) as the primary source of terms and their meanings from the SE community.  Once we've covered the terms from SWEBOK, we'll open it to other sources, though we'll always prefer well-recognized sources that will help us be systematic.
 
 ## How to contribute
 
-*to be added*
+The page for each term includes a discussion capability.  Make comments there to suggest changes or discuss the term's entry.
 
 {% assign first = site.terms | sort | first %}
 ## Summary list of terms ([browse by term]({{ first.url | relative_url }}))
