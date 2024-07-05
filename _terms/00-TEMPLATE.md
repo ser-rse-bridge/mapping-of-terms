@@ -1,46 +1,50 @@
 ---
 # array of synonyms or adjacent concepts
 se_fundamental:
-    - second term
+    - a term
+    - a synonym
+    - a long synonym that will wrap within the cell of the table.  I wonder how long it will have to be to do that?
+    - an adjacent term
 
 # Short (1 sentence) description of the SE fundamental -- as a convenience
-fundamental_description: "write documentation"
+fundamental_description: "avoid stupid mistakes"
 
 # Seems to need quotes, unfortunately
 swebok_sections: 
-    - 2.7.1.8
+    - "10.09.08.07"
 
 # array of synonyms or adjacent concepts
 # need a way of specifying that it is the same as the se_fundamental
 rse_equivalent:
-    - spring term
-    - summer term
+    - different term
+    - different synonym
+    - same adjacent term
 
 # Text, a brief description of the typical realizations of the fundamental, in RSE practice
-rse_practice: "agile means never having to document anything"
+rse_practice: "doing some practical"
 
 # General level of awareness of the fundamental in the research software community
 # integers 0-3, 0=effectively no awareness, 3=widespread awareness
-rse_awareness: 0
-rse_awareness_source: inexpert judgement
+rse_awareness: 2
+rse_awareness_source: expert judgement
 
 # General level of usage of the fundamental in the research software community
 # integers 0-3, 0=effectively no usage, 3=widespread use
-rse_usage: 3
-rse_usage_source: random number generator
+rse_usage: 1
+rse_usage_source: expert judgement
 
 # Potential for SE research to improve use in research software
 # integers 0-3, 0=effectively no opportunity, 3=significant SE research beneficial
-ser_potential: 2
-ser_potential_source: crazy uncle bert
+ser_potential: 3
+ser_potential_source: expert judgement
 
 # Reasons/opportunities for the SE research
-ser_opportunities: because we don't know what we're doing
+ser_opportunities: text
 
 # References (external links, papers, etc., that may provide useful connections)
 references:
-    - ref3
-    - ref4
+    - ref1
+    - ref2
 
 # Date of last review by the editorial board
 last_reviewed: 1970-01-01

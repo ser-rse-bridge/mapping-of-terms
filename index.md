@@ -50,17 +50,55 @@ We want this mapping to represent the collective experience of the SER and RSE c
   <thead><tr>
     <th>Section</th><th>Heading</th><th>Page</th><th>Mapping</th>
   </tr></thead>
+  {% comment %}
+    Step through the rows of the table.  
+    Each cell in the row has a component named per the header row of the data file.
+  {% endcomment %}
+  {% assign prev_section = "" %}
   {% for row in site.data.swebok-toc %}
     {% assign tdstyle = ""%}
+    {% comment %}
+      Chapter headings have only one component in their section numbers
+    {% endcomment %}
     {% assign depth = row.section | split: "." | size %}
+    {% comment %}
+      Render chapter headings in bold face.
+      Render those for which mapping is not applicable in red.
+    {% endcomment %}
     {% if depth == 1 or row.mapping == "n/a" %}
       {% assign tdstyle = 'style="' %}
       {% if depth == 1 %}{% assign tdstyle = tdstyle | append: "font-weight:bold;" %}{% endif %}
       {% if row.mapping == "n/a" %}{% assign tdstyle = tdstyle | append: "color:red;" %}{% endif %}
       {% assign tdstyle = tdstyle | append: '"' %}
     {% endif %}
+    {% comment %}
+      Find terms in the collection matching this section
+    {% endcomment %}
+    {% assign terms = site.terms | where: "swebok_sections", row.section %}
+    {% assign mappings = "" %}
+    {% for t in terms %}
+      {% assign turl = t.url | relative_url %}
+      {% assign mappings = mappings | append: '<a href="' | append: turl| append: '">mapping</a>' %}
+      {% unless forloop.last %}{% assign mappings = mappings | append: ", " %}{% endunless %}
+    {% endfor %}
+    {% comment %}
+      Look for any terms that fall between the previous section and this section
+    {% endcomment %}
+    {% assign terms = site.terms | where_exp: "t", "t.swebok_sections[0] > prev_section and t.swebok_sections[0] < row.section" %}
+    {% for t in terms %}
+        <tr>
+          <td>{{ t.swebok_sections }}</td>
+          <td>{{ t.se_fundamental[0] }}</td>
+          <td>??</td>
+          <td><a href="{{ t.url | relative_url }}">mapping</a></td>
+        </tr>
+    {% endfor %}
     <tr>
-      <td {{tdstyle }}>{{ row.section }}</td><td {{tdstyle }}>{{ row.heading }}</td><td {{tdstyle }}>{{ row.page }}</td><td {{tdstyle }}>{{ row.mapping }}</td>
+      <td {{tdstyle }}>{{ row.section }}</td>
+      <td {{tdstyle }}>{{ row.heading }}</td>
+      <td {{tdstyle }}>{{ row.page }}</td>
+      <td {{tdstyle }}>{{ row.mapping }}{{ mappings }}</td>
     </tr>
+    {% assign prev_section = row.section %}
     {% endfor %}
 </table>
