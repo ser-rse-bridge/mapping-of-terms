@@ -99,6 +99,16 @@ defaults:
     values:
       layout: "term"
       comments: true
+      sidebar:
+        - title: "Quick explanations"
+          text: |
+            **SE fundamentals** and the **description** are based on SWEBOK.  **RSE equivalent** terms and the description of **RSE practice** are based on the opinion of research software developers.
+
+            **RSE awareness** and **RSE usage** are coarse estimates of recognition/adoption of the practices for research software. 0=effectively no awareness/usage to 3=widespread awareness/usage.  Sources for the estimates are noted in parentheses.
+
+            **SER potential** is a coarse estimate of the potential for additional software engineering research to increase the awareness/adoption by RSEs. 0=effectively no opportunity to 3=significant SE research would be beneficial.  **Opportunity** briefly describes the software engineering research opportunity.
+        - title: "How to contribute"
+          text: "Use the comment section below to suggest changes or discuss this term."
 
 footer:
   links:
