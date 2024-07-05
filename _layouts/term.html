@@ -32,9 +32,9 @@ layout: single
 <h2>Details</h2>
 <table>
     <tr>
-        <td>{{ page.swebok_sections | size | pluralize: "SWEBOK section", "SWEBOK sections" }}</td>
-        <td>{% if page.swebok_sections and page.swebok_sections != empty %}
-                {{ page.swebok_sections | array_to_sentence_string }}
+        <td>SWEBOK section</td>
+        <td>{% if page.swebok_section and page.swebok_section != empty %}
+                {{ page.swebok_section }}
             {% else %}
                 <em style="color:red">Not provided</em>
             {% endif %}

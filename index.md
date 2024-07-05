@@ -44,7 +44,7 @@ We want this mapping to represent the collective experience of the SER and RSE c
 
 *Note that the SWEBOK contains a great deal more than just terminology.  This table presents only those sections of the SWEBOK which are candidates for mapping.  If no link is presented, we don't yet have a page for the relevant term(s). If you'd like to help us complete the table, please reach out via [Github issues](https://github.com/ser-rse-bridge/mapping-of-terms/issues).*
 
-*During the development of this page, we're displaying the whole SWEBOK table of contents, but marking _those sections that are not candidates_ for mapping in red and noting "n/a" in the **Mapping** column. Eventually, we will simply avoid displaying those entries. Also, we're currently showing the SWEBOK page numbers, as a convenience.  We may remove those in production.*
+*During the development of this page, we're displaying the whole SWEBOK table of contents, but marking sections that are **not** candidates for mapping in red and noting "n/a" in the **Mapping** column. Eventually, we will simply avoid displaying those entries. Also, we're currently showing the SWEBOK page numbers, as a convenience.  We may remove those in production.*
 
 <table style="display:table">
   <thead><tr>
@@ -74,7 +74,7 @@ We want this mapping to represent the collective experience of the SER and RSE c
     {% comment %}
       Find terms in the collection matching this section
     {% endcomment %}
-    {% assign terms = site.terms | where: "swebok_sections", row.section %}
+    {% assign terms = site.terms | where: "swebok_section", row.section %}
     {% assign mappings = "" %}
     {% for t in terms %}
       {% assign turl = t.url | relative_url %}
@@ -84,10 +84,10 @@ We want this mapping to represent the collective experience of the SER and RSE c
     {% comment %}
       Look for any terms that fall between the previous section and this section
     {% endcomment %}
-    {% assign terms = site.terms | where_exp: "t", "t.swebok_sections[0] > prev_section and t.swebok_sections[0] < row.section" %}
+    {% assign terms = site.terms | where_exp: "t", "t.swebok_section > prev_section and t.swebok_section < row.section" %}
     {% for t in terms %}
         <tr>
-          <td>{{ t.swebok_sections }}</td>
+          <td>{{ t.swebok_section }}</td>
           <td>{{ t.se_fundamental[0] }}</td>
           <td>??</td>
           <td><a href="{{ t.url | relative_url }}">mapping</a></td>

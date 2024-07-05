@@ -9,9 +9,9 @@ se_fundamental:
 # Short (1 sentence) description of the SE fundamental -- as a convenience
 fundamental_description: "avoid stupid mistakes"
 
-# Seems to need quotes, unfortunately
-swebok_sections: 
-    - "10.09.08.07"
+# SWEBOK section needs to be formatted with two digits per component, zero-filled so that they sort lexically as strings
+# They also need to be quoted
+swebok_section: "10.09.08.07"
 
 # array of synonyms or adjacent concepts
 # need a way of specifying that it is the same as the se_fundamental
