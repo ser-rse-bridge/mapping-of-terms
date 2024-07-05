@@ -1,0 +1,26 @@
+{% comment %}
+  Modify buttons so that tool tips show the names of the previous/next se_fundamentals.
+
+  Note: tried to use the se_fundamentals directly on the button text, but the buttons tend
+  to come out different sizes, which looks bad.
+{% endcomment %}
+{% if page.previous or page.next %}
+  <nav class="pagination">
+    {% if page.previous %}
+      <a href="{{ page.previous.url | relative_url }}" class="pagination--pager" title="{{ page.previous.se_fundamental | first | markdownify | strip_html }}">{{ site.data.ui-text[site.locale].pagination_previous | default: "Previous" }}</a>
+    {% else %}
+      <a href="#" class="pagination--pager disabled">{{ site.data.ui-text[site.locale].pagination_previous | default: "Previous" }}</a>
+    {% endif %}
+    {% if page.next %}
+      <a href="{{ page.next.url | relative_url }}" class="pagination--pager" title="{{ page.next.se_fundamental | first | markdownify | strip_html }}">{{ site.data.ui-text[site.locale].pagination_next | default: "Next" }}</a>
+    {% else %}
+      <a href="#" class="pagination--pager disabled">{{ site.data.ui-text[site.locale].pagination_next | default: "Next" }}</a>
+    {% endif %}
+    {% comment %}
+      A hacky addition of a link to jump up to the SWEBOK TOC at the row for the current term.
+
+      I don't understand the CSS well enough to get something better.
+    {% endcomment %}
+    <a href="{{ "/" | relative_url }}#{{ page.swebok_section }}" style="display: block;padding: 1em 2em;float: inline-start;width: 100%;font-family: sans-serif;font-size: $type-size-5;font-weight: bold;text-align: center;text-decoration: none;color: $muted-text-color;border: 1px solid mix(#000, $border-color, 25%);border-radius: $border-radius;" title="SWEBOK TOC entry">Up to SWEBOK Table of Contents</a>
+  </nav>
+{% endif %}
