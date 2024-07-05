@@ -46,6 +46,13 @@ We want this mapping to represent the collective experience of the SER and RSE c
 
 *During the development of this page, we're displaying the whole SWEBOK table of contents, but marking sections that are **not** candidates for mapping in red and noting "n/a" in the **Mapping** column. Eventually, we will simply avoid displaying those entries. Also, we're currently showing the SWEBOK page numbers, as a convenience.  We may remove those in production.*
 
+{% comment %}
+  Use site.data.swebok-toc to present a "table of contents" to SWEBOK.
+  Add links to the term mapping pages for toc entries, where appropriate.
+
+  Add additional rows to the toc for terms that fall between one toc section and the next.  
+  Specifically, the toc only goes to depth=3, so items at depth=4+ need to be added.
+{% endcomment %}
 <table style="display:table">
   <thead><tr>
     <th>Section</th><th>Heading</th><th>Page</th><th>Mapping</th>
@@ -72,9 +79,9 @@ We want this mapping to represent the collective experience of the SER and RSE c
       {% assign tdstyle = tdstyle | append: '"' %}
     {% endif %}
     {% comment %}
-      Find terms in the collection matching this section
+      Look for exact matches for this section in the terms collection
     {% endcomment %}
-    {% assign terms = site.terms | where: "swebok_section", row.section %}
+    {% assign terms = site.terms | where_exp: "t", "t.swebok_section == row.section" %}
     {% assign mappings = "" %}
     {% for t in terms %}
       {% assign turl = t.url | relative_url %}
@@ -82,18 +89,21 @@ We want this mapping to represent the collective experience of the SER and RSE c
       {% unless forloop.last %}{% assign mappings = mappings | append: ", " %}{% endunless %}
     {% endfor %}
     {% comment %}
-      Look for any terms that fall between the previous section and this section
+      Emit any terms that fall between the previous section and this section
     {% endcomment %}
     {% assign terms = site.terms | where_exp: "t", "t.swebok_section > prev_section and t.swebok_section < row.section" %}
     {% for t in terms %}
-        <tr>
+        <tr id="{{ t.swebok_section }}">
           <td>{{ t.swebok_section }}</td>
           <td>{{ t.se_fundamental[0] }}</td>
           <td>??</td>
           <td><a href="{{ t.url | relative_url }}">mapping</a></td>
         </tr>
     {% endfor %}
-    <tr>
+    {% comment %}
+      Emit the actual toc row we're processing
+    {% endcomment %}
+    <tr id="{{ row.section }}">
       <td {{tdstyle }}>{{ row.section }}</td>
       <td {{tdstyle }}>{{ row.heading }}</td>
       <td {{tdstyle }}>{{ row.page }}</td>
