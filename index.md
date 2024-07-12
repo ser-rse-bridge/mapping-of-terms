@@ -38,7 +38,7 @@ The table below, based on the SWEBOK table of contents, will link you to the det
 
 ## How *you* can contribute
 
-We want this mapping to represent the collective experience of the SER and RSE communities. The page for each SE fundamental includes a discussion capability.  Make comments there to suggest changes or discuss the term's entry.
+We want this mapping to represent the collective experience of the SER and RSE communities. The page for each SE fundamental includes a discussion capability.  Make comments there to suggest changes or discuss the term's entry. Also feel free to discuss the overall approach or things that can be improved via [Github issues](https://github.com/ser-rse-bridge/mapping-of-terms/issues).*
 
 ## SWEBOK table of contents
 
