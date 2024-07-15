@@ -108,7 +108,7 @@ defaults:
 
             **SER potential** is a coarse estimate of the potential for additional software engineering research to increase the awareness/adoption by RSEs. 0=effectively no opportunity to 3=significant SE research would be beneficial.  **Opportunity** briefly describes the software engineering research opportunity.
         - title: "How to contribute"
-          text: "Use the comment section below to suggest changes or discuss this term."
+          text: "Use the [comment section](#giscus-comments) to suggest changes or discuss this term. Use [Github discussions](https://github.com/ser-rse-bridge/mapping-of-terms/discussions) for discussion of the overall approach, or [Github issues](https://github.com/ser-rse-bridge/mapping-of-terms/issues) for specific concerns."
 
 footer:
   links:
