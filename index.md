@@ -3,6 +3,7 @@ title: Mapping of Terms Between Software Engineering Research (SER) and Research
 layout: single
 toc: true
 toc_sticky: true
+comments: true
 ---
 
 ## Goals
