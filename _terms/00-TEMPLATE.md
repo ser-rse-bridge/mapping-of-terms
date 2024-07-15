@@ -46,8 +46,8 @@ references:
     - ref1
     - ref2
 
-# Date of last review by the editorial board
-last_reviewed: 1970-01-01
+# Date of last review by the editorial board (YYYY-MM-DD)
+last_reviewed: 
 ---
 Container for everything worth discussing about this fundamental, e.g., 
 

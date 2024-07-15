@@ -31,7 +31,7 @@ Each SE fundamental has a page that lists the following:
     - Values range from 0=effectively no opportunity to 3=significant SE research would be beneficial
 - A brief description of the reasons or opportunities for SE research to facilitate improvements
 - Any references or links that may be useful
-- Date of last review of the term mapping record by the curators of the website
+- Date of the last update to the term mapping record (based on git commits), and if available, the date of the last review of the record by the curators of the website.
 - Additional notes as may be useful
 
 {% assign first = site.terms | sort | first %}
