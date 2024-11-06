@@ -33,8 +33,8 @@ url: "https://ser-rse-bridge.github.io" # the base hostname & protocol for your 
 
 # Build settings
 # theme: minima
-# theme: minimal-mistakes-jekyll
-remote_theme: "mmistakes/minimal-mistakes@4.24.0"
+theme: minimal-mistakes-jekyll
+# remote_theme: "mmistakes/minimal-mistakes@4.24.0"
 
 #minimal_mistakes_skin: "default" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
 minimal_mistakes_skin: "air"
@@ -52,7 +52,7 @@ plugins:
   - jekyll-include-cache
   - jekyll-sitemap
   - jekyll-remote-theme
-  - jekyll-pluralize
+#  - liquid_pluralize
 
 
 # Exclude from processing.
