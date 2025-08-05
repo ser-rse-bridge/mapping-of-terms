@@ -1,535 +1,747 @@
 section	heading	page	mapping
-00.01	Foreword	xvii	n/a
-00.02	Foreword to the 2004 Edition	xix	n/a
-00.03	Editors	xxi	n/a
-00.04	Coeditors	xxi	n/a
-00.05	Contributing Editors	xxi	n/a
-00.06	Change Control Board	xxi	n/a
-00.07	Knowledge Area Editors	xxiii	n/a
-00.08	Knowledge Area Editors of Previous SWEBOK Versions	xxv	n/a
-00.09	Review Team	xxvii	n/a
-00.10	Acknowledgements	xxix	n/a
-00.11	Professional Activities Board, 2013 Membership	xxix	n/a
-00.12	Motions Regarding the Approval of SWEBOK Guide V3.0	xxx	n/a
-00.13	Motions Regarding the Approval of SWEBOK Guide 2004 Version	xxx	n/a
-00.14	Introduction to the Guide	xxxi	n/a
-01	Software Requirements	1-1	
-01.01	Software Requirements Fundamentals	1-1	
-01.01.01	Definition of a Software Requirement	1-1	
-01.01.02	Product and Process Requirements	1-2	
-01.01.03	Functional and Nonfunctional Requirements	1-3	
-01.01.04	Emergent Properties	1-3	
-01.01.05	Quantifiable Requirements	1-3	
-01.01.06	System Requirements and Software Requirements	1-3	
-01.02	Requirements Process	1-3	
-01.02.01	Process Models	1-4	
-01.02.02	Process Actors	1-4	
-01.02.03	Process Support and Management	1-4	
-01.02.04	Process Quality and Improvement	1-4	
-01.03	Requirements Elicitation	1-5	
-01.03.01	Requirements Sources	1-5	
-01.03.02	Elicitation Techniques	1-6	
-01.04	Requirements Analysis	1-7	
-01.04.01	Requirements Classification	1-7	
-01.04.02	Conceptual Modeling	1-8	
-01.04.03	Architectural Design and Requirements Allocation	1-9	
-01.04.04	Requirements Negotiation	1-9	
-01.04.05	Formal Analysis	1-10	
-01.05	Requirements Specification	1-10	
-01.05.01	System Definition Document	1-10	
-01.05.02	System Requirements Specification	1-10	
-01.05.03	Software Requirements Specification	1-11	
-01.06	Requirements Validation	1-11	
-01.06.01	Requirements Reviews	1-11	
-01.06.02	Prototyping	1-12	
-01.06.03	Model Validation	1-12	
-01.06.04	Acceptance Tests	1-12	
-01.07	Practical Considerations	1-12	
-01.07.01	Iterative Nature of the Requirements Process	1-13	
-01.07.02	Change Management	1-13	
-01.07.03	Requirements Attributes	1-13	
-01.07.04	Requirements Tracing	1-14	
-01.07.05	Measuring Requirements	1-14	
-01.08	Software Requirements Tools	1-14	
-01.09	Matrix of Topics vs. Reference Material	1-15	n/a
-02	Software Design	2-1	
-02.01	Software Design Fundamentals	2-2	
-02.01.01	General Design Concepts	2-2	
-02.01.02	Context of Software Design	2-2	
-02.01.03	Software Design Process	2-2	
-02.01.04	Software Design Principles	2-3	
-02.02	Key Issues in Software Design	2-3	
-02.02.01	Concurrency	2-4	
-02.02.02	Control and Handling of Events	2-4	
-02.02.03	Data Persistence	2-4	
-02.02.04	Distribution of Components	2-4	
-02.02.05	Error and Exception Handling and Fault Tolerance	2-4	
-02.02.06	Interaction and Presentation	2-4	
-02.02.07	Security	2-4	
-02.03	Software Structure and Architecture	2-4	
-02.03.01	Architectural Structures and Viewpoints	2-5	
-02.03.02	Architectural Styles	2-5	
-02.03.03	Design Patterns	2-5	
-02.03.04	Architecture Design Decisions	2-5	
-02.03.05	Families of Programs and Frameworks	2-5	
-02.04	User Interface Design	2-5	
-02.04.01	General User Interface Design Principles	2-6	
-02.04.02	User Interface Design Issues	2-6	
-02.04.03	The Design of User Interaction Modalities	2-6	
-02.04.04	The Design of Information Presentation	2-6	
-02.04.05	User Interface Design Process	2-7	
-02.04.06	Localization and Internationalization	2-7	
-02.04.07	Metaphors and Conceptual Models	2-7	
-02.05	Software Design Quality Analysis and Evaluation	2-7	
-02.05.01	Quality Attributes	2-7	
-02.05.02	Quality Analysis and Evaluation Techniques	2-8	
-02.05.03	Measures	2-8	
-02.06	Software Design Notations	2-8	
-02.06.01	Structural Descriptions (Static View)	2-8	
-02.06.02	Behavioral Descriptions (Dynamic View)	2-9	
-02.07	Software Design Strategies and Methods	2-10	
-02.07.01	General Strategies	2-10	
-02.07.02	Function-Oriented (Structured) Design	2-10	
-02.07.03	Object-Oriented Design	2-10	
-02.07.04	Data Structure-Centered Design	2-10	
-02.07.05	Component-Based Design (CBD)	2-10	
-02.07.06	Other Methods	2-10	
-02.08	Software Design Tools	2-11	
-02.09	Matrix of Topics vs. Reference Material	2-12	n/a
-03	Software Construction	3-1	
-03.01	Software Construction Fundamentals	3-1	
-03.01.01	Minimizing Complexity	3-3	
-03.01.02	Anticipating Change	3-3	
-03.01.03	Constructing for Verification	3-3	
-03.01.04	Reuse	3-3	
-03.01.05	Standards in Construction	3-3	
-03.02	Managing Construction	3-4	
-03.02.01	Construction in Life Cycle Models	3-4	
-03.02.02	Construction Planning	3-4	
-03.02.03	Construction Measurement	3-4	
-03.03	Practical Considerations	3-5	
-03.03.01	Construction Design	3-5	
-03.03.02	Construction Languages	3-5	
-03.03.03	Coding	3-6	
-03.03.04	Construction Testing	3-6	
-03.03.05	Construction for Reuse	3-6	
-03.03.06	Construction with Reuse	3-7	
-03.03.07	Construction Quality	3-7	
-03.03.08	Integration	3-7	
-03.04	Construction Technologies	3-8	
-03.04.01	API Design and Use	3-8	
-03.04.02	Object-Oriented Runtime Issues	3-8	
-03.04.03	Parameterization and Generics	3-8	
-03.04.04	Assertions, Design by Contract, and Defensive Programming	3-8	
-03.04.05	Error Handling, Exception Handling, and Fault Tolerance	3-9	
-03.04.06	Executable Models	3-9	
-03.04.07	State-Based and Table-Driven Construction Techniques	3-9	
-03.04.08	Runtime Configuration and Internationalization	3-10	
-03.04.09	Grammar-Based Input Processing	3-10	
-03.04.10	Concurrency Primitives	3-10	
-03.04.11	Middleware	3-10	
-03.04.12	Construction Methods for Distributed Software	3-11	
-03.04.13	Constructing Heterogeneous Systems	3-11	
-03.04.14	Performance Analysis and Tuning	3-11	
-03.04.15	Platform Standards	3-11	
-03.04.16	Test-First Programming	3-11	
-03.05	Software Construction Tools	3-12	
-03.05.01	Development Environments	3-12	
-03.05.02	GUI Builders	3-12	
-03.05.03	Unit Testing Tools	3-12	
-03.05.04	Profiling, Performance Analysis, and Slicing Tools	3-12	
-03.06	Matrix of Topics vs. Reference Material	3-13	n/a
-04	Software Testing	4-1	
-04.01	Software Testing Fundamentals	4-3	
-04.01.01	Testing-Related Terminology	4-3	
-04.01.02	Key Issues	4-3	
-04.01.03	Relationship of Testing to Other Activities	4-4	
-04.02	Test Levels	4-5	
-04.02.01	The Target of the Test	4-5	
-04.02.02	Objectives of Testing	4-5	
-04.03	Test Techniques	4-7	
-04.03.01	Based on the Software Engineer’s Intuition and Experience	4-8	
-04.03.02	Input Domain-Based Techniques	4-8	
-04.03.03	Code-Based Techniques	4-8	
-04.03.04	Fault-Based Techniques	4-9	
-04.03.05	Usage-Based Techniques	4-9	
-04.03.06	Model-Based Testing Techniques	4-10	
-04.03.07	Techniques Based on the Nature of the Application	4-10	
-04.03.08	Selecting and Combining Techniques	4-11	
-04.04	Test-Related Measures	4-11	
-04.04.01	Evaluation of the Program Under Test	4-11	
-04.04.02	Evaluation of the Tests Performed	4-12	
-04.05	Test Process	4-12	
-04.05.01	Practical Considerations	4-13	
-04.05.02	Test Activities	4-14	
-04.06	Software Testing Tools	4-15	
-04.06.01	Testing Tool Support	4-15	
-04.06.02	Categories of Tools	4-15	
-04.07	Matrix of Topics vs. Reference Material	4-17	n/a
-05	Software Maintenance	5-1	
-05.01	Software Maintenance Fundamentals	5-1	
-05.01.01	Definitions and Terminology	5-1	
-05.01.02	Nature of Maintenance	5-2	
-05.01.03	Need for Maintenance	5-3	
-05.01.04	Majority of Maintenance Costs	5-3	
-05.01.05	Evolution of Software	5-3	
-05.01.06	Categories of Maintenance	5-3	
-05.02	Key Issues in Software Maintenance	5-4	
-05.02.01	Technical Issues	5-4	
-05.02.02	Management Issues	5-5	
-05.02.03	Maintenance Cost Estimation	5-6	
-05.02.04	Software Maintenance Measurement	5-7	
-05.03	Maintenance Process	5-7	
-05.03.01	Maintenance Processes	5-7	
-05.03.02	Maintenance Activities	5-8	
-05.04	Techniques for Maintenance	5-10	
-05.04.01	Program Comprehension	5-10	
-05.04.02	Reengineering	5-10	
-05.04.03	Reverse Engineering	5-10	
-05.04.04	Migration	5-10	
-05.04.05	Retirement	5-11	
-05.05	Software Maintenance Tools	5-11	
-05.06	Matrix of Topics vs. Reference Material	5-12	n/a
-06	Software Configuration Management	6-1	
-06.01	Management of the SCM Process	6-2	
-06.01.01	Organizational Context for SCM	6-2	
-06.01.02	Constraints and Guidance for the SCM Process	6-3	
-06.01.03	Planning for SCM	6-3	
-06.01.04	SCM Plan	6-5	
-06.01.05	Surveillance of Software Configuration Management	6-5	
-06.02	Software Configuration Identification	6-6	
-06.02.01	Identifying Items to Be Controlled	6-6	
-06.02.02	Software Library	6-8	
-06.03	Software Configuration Control	6-8	
-06.03.01	Requesting, Evaluating, and Approving Software Changes	6-8	
-06.03.02	Implementing Software Changes	6-9	
-06.03.03	Deviations and Waivers	6-10	
-06.04	Software Configuration Status Accounting	6-10	
-06.04.01	Software Configuration Status Information	6-10	
-06.04.02	Software Configuration Status Reporting	6-10	
-06.05	Software Configuration Auditing	6-10	
-06.05.01	Software Functional Configuration Audit	6-11	
-06.05.02	Software Physical Configuration Audit	6-11	
-06.05.03	In-Process Audits of a Software Baseline	6-11	
-06.06	Software Release Management and Delivery	6-11	
-06.06.01	Software Building	6-11	
-06.06.02	Software Release Management	6-12	
-06.07	Software Configuration Management Tools	6-12	
-06.08	Matrix of Topics vs. Reference Material	6-13	n/a
-07	Software Engineering Management	7-1	
-07.01	Initiation and Scope Definition	7-4	
-07.01.01	Determination and Negotiation of Requirements	7-4	
-07.01.02	Feasibility Analysis	7-4	
-07.01.03	Process for the Review and Revision of Requirements	7-5	
-07.02	Software Project Planning	7-5	
-07.02.01	Process Planning	7-5	
-07.02.02	Determine Deliverables	7-5	
-07.02.03	Effort, Schedule, and Cost Estimation	7-6	
-07.02.04	Resource Allocation	7-6	
-07.02.05	Risk Management	7-6	
-07.02.06	Quality Management	7-6	
-07.02.07	Plan Management	7-7	
-07.03	Software Project Enactment	7-7	
-07.03.01	Implementation of Plans	7-7	
-07.03.02	Software Acquisition and Supplier Contract Management	7-7	
-07.03.03	Implementation of Measurement Process	7-7	
-07.03.04	Monitor Process	7-7	
-07.03.05	Control Process	7-8	
-07.03.06	Reporting	7-8	
-07.04	Review and Evaluation	7-8	
-07.04.01	Determining Satisfaction of Requirements	7-8	
-07.04.02	Reviewing and Evaluating Performance	7-9	
-07.05	Closure	7-9	
-07.05.01	Determining Closure	7-9	
-07.05.02	Closure Activities	7-9	
-07.06	Software Engineering Measurement	7-9	
-07.06.01	Establish and Sustain Measurement Commitment	7-9	
-07.06.02	Plan the Measurement Process	7-10	
-07.06.03	Perform the Measurement Process	7-11	
-07.06.04	Evaluate Measurement	7-11	
-07.07	Software Engineering Management Tools	7-11	
-07.08	Matrix of Topics vs. Reference Material	7-13	n/a
-08	Software Engineering Process	8-1	
-08.01	Software Process Definition	8-2	
-08.01.01	Software Process Management	8-3	
-08.01.02	Software Process Infrastructure	8-4	
-08.02	Software Life Cycles	8-4	
-08.02.01	Categories of Software Processes	8-5	
-08.02.02	Software Life Cycle Models	8-5	
-08.02.03	Software Process Adaptation	8-6	
-08.02.04	Practical Considerations	8-6	
-08.03	Software Process Assessment and Improvement	8-6	
-08.03.01	Software Process Assessment Models	8-7	
-08.03.02	Software Process Assessment Methods	8-7	
-08.03.03	Software Process Improvement Models	8-7	
-08.03.04	Continuous and Staged Software Process Ratings	8-8	
-08.04	Software Measurement	8-8	
-08.04.01	Software Process and Product Measurement	8-9	
-08.04.02	Quality of Measurement Results	8-10	
-08.04.03	Software Information Models	8-10	
-08.04.04	Software Process Measurement Techniques	8-11	
-08.05	Software Engineering Process Tools	8-12	
-08.06	Matrix of Topics vs. Reference Material	8-13	n/a
-09	Software Engineering Models and Methods	9-1	
-09.01	Modeling	9-1	
-09.01.01	Modeling Principles	9-2	
-09.01.02	Properties and Expression of Models	9-3	
-09.01.03	Syntax, Semantics, and Pragmatics	9-3	
-09.01.04	Preconditions, Postconditions, and Invariants	9-4	
-09.02	Types of Models	9-4	
-09.02.01	Information Modeling	9-5	
-09.02.02	Behavioral Modeling	9-5	
-09.02.03	Structure Modeling	9-5	
-09.03	Analysis of Models	9-5	
-09.03.01	Analyzing for Completeness	9-5	
-09.03.02	Analyzing for Consistency	9-6	
-09.03.03	Analyzing for Correctness	9-6	
-09.03.04	Traceability	9-6	
-09.03.05	Interaction Analysis	9-6	
-09.04	Software Engineering Methods	9-7	
-09.04.01	Heuristic Methods	9-7	
-09.04.02	Formal Methods	9-7	
-09.04.03	Prototyping Methods	9-8	
-09.04.04	Agile Methods	9-9	
-09.05	Matrix of Topics vs. Reference Material	9-10	n/a
-10	Software Quality	10-1	
-10.01	Software Quality Fundamentals	10-2	
-10.01.01	Software Engineering Culture and Ethics	10-2	
-10.01.02	Value and Costs of Quality	10-3	
-10.01.03	Models and Quality Characteristics	10-3	
-10.01.04	Software Quality Improvement	10-4	
-10.01.05	Software Safety	10-4	
-10.02	Software Quality Management Processes	10-5	
-10.02.01	Software Quality Assurance	10-5	
-10.02.02	Verification & Validation	10-6	
-10.02.03	Reviews and Audits	10-6	
-10.03	Practical Considerations	10-9	
-10.03.01	Software Quality Requirements	10-9	
-10.03.02	Defect Characterization	10-10	
-10.03.03	Software Quality Management Techniques	10-11	
-10.03.04	Software Quality Measurement	10-12	
-10.04	Software Quality Tools	10-12	
-10.05	Matrix of Topics vs. Reference Material	10-14	n/a
-11	Software Engineering Professional Practice	11-1	n/a
-11.01	Professionalism	11-2	n/a
-11.01.01	Accreditation, Certification, and Licensing	11-3	n/a
-11.01.02	Codes of Ethics and Professional Conduct	11-4	n/a
-11.01.03	Nature and Role of Professional Societies	11-4	n/a
-11.01.04	Nature and Role of Software Engineering Standards	11-4	n/a
-11.01.05	Economic Impact of Software	11-5	n/a
-11.01.06	Employment Contracts	11-5	n/a
-11.01.07	Legal Issues	11-5	n/a
-11.01.08	Documentation	11-7	n/a
-11.01.09	Tradeoff Analysis	11-8	n/a
-11.02	Group Dynamics and Psychology	11-9	n/a
-11.02.01	Dynamics of Working in Teams/Groups	11-9	n/a
-11.02.02	Individual Cognition	11-9	n/a
-11.02.03	Dealing with Problem Complexity	11-10	n/a
-11.02.04	Interacting with Stakeholders	11-10	n/a
-11.02.05	Dealing with Uncertainty and Ambiguity	11-10	n/a
-11.02.06	Dealing with Multicultural Environments	11-10	n/a
-11.03	Communication Skills	11-11	n/a
-11.03.01	Reading, Understanding, and Summarizing	11-11	n/a
-11.03.02	Writing	11-11	n/a
-11.03.03	Team and Group Communication	11-11	n/a
-11.03.04	Presentation Skills	11-12	n/a
-11.04	Matrix of Topics vs. Reference Material	11-13	n/a
-12	Software Engineering Economics	12-1	n/a
-12.01	Software Engineering Economics Fundamentals	12-3	n/a
-12.01.01	Finance	12-3	n/a
-12.01.02	Accounting	12-3	n/a
-12.01.03	Controlling	12-3	n/a
-12.01.04	Cash Flow	12-3	n/a
-12.01.05	Decision-Making Process	12-4	n/a
-12.01.06	Valuation	12-5	n/a
-12.01.07	Inflation	12-6	n/a
-12.01.08	Depreciation	12-6	n/a
-12.01.09	Taxation	12-6	n/a
-12.01.10	Time-Value of Money	12-6	n/a
-12.01.11	Efficiency	12-6	n/a
-12.01.12	Effectiveness	12-6	n/a
-12.01.13	Productivity	12-6	n/a
-12.02	Life Cycle Economics	12-7	n/a
-12.02.01	Product	12-7	n/a
-12.02.02	Project	12-7	n/a
-12.02.03	Program	12-7	n/a
-12.02.04	Portfolio	12-7	n/a
-12.02.05	Product Life Cycle	12-7	n/a
-12.02.06	Project Life Cycle	12-7	n/a
-12.02.07	Proposals	12-8	n/a
-12.02.08	Investment Decisions	12-8	n/a
-12.02.09	Planning Horizon	12-8	n/a
-12.02.10	Price and Pricing	12-8	n/a
-12.02.11	Cost and Costing	12-9	n/a
-12.02.12	Performance Measurement	12-9	n/a
-12.02.13	Earned Value Management	12-9	n/a
-12.02.14	Termination Decisions	12-9	n/a
-12.02.15	Replacement and Retirement Decisions	12-10	n/a
-12.03	Risk and Uncertainty	12-10	n/a
-12.03.01	Goals, Estimates, and Plans	12-10	n/a
-12.03.02	Estimation Techniques	12-11	n/a
-12.03.03	Addressing Uncertainty	12-11	n/a
-12.03.04	Prioritization	12-11	n/a
-12.03.05	Decisions under Risk	12-11	n/a
-12.03.06	Decisions under Uncertainty	12-12	n/a
-12.04	Economic Analysis Methods	12-12	n/a
-12.04.01	For-Profit Decision Analysis	12-12	n/a
-12.04.02	Minimum Acceptable Rate of Return	12-13	n/a
-12.04.03	Return on Investment	12-13	n/a
-12.04.04	Return on Capital Employed	12-13	n/a
-12.04.05	Cost-Benefit Analysis	12-13	n/a
-12.04.06	Cost-Effectiveness Analysis	12-13	n/a
-12.04.07	Break-Even Analysis	12-13	n/a
-12.04.08	Business Case	12-13	n/a
-12.04.09	Multiple Attribute Evaluation	12-14	n/a
-12.04.10	Optimization Analysis	12-14	n/a
-12.05	Practical Considerations	12-14	n/a
-12.05.01	The “Good Enough” Principle	12-14	n/a
-12.05.02	Friction-Free Economy	12-15	n/a
-12.05.03	Ecosystems	12-15	n/a
-12.05.04	Offshoring and Outsourcing	12-15	n/a
-12.06	Matrix of Topics vs. Reference Material	12-16	n/a
-13	Computing Foundations	13-1	n/a
-13.01	Problem Solving Techniques	13-3	n/a
-13.01.01	Definition of Problem Solving	13-3	n/a
-13.01.02	Formulating the Real Problem	13-3	n/a
-13.01.03	Analyze the Problem	13-3	n/a
-13.01.04	Design a Solution Search Strategy	13-3	n/a
-13.01.05	Problem Solving Using Programs	13-3	n/a
-13.02	Abstraction	13-4	n/a
-13.02.01	Levels of Abstraction	13-4	n/a
-13.02.02	Encapsulation	13-4	n/a
-13.02.03	Hierarchy	13-4	n/a
-13.02.04	Alternate Abstractions	13-5	n/a
-13.03	Programming Fundamentals	13-5	n/a
-13.03.01	The Programming Process	13-5	n/a
-13.03.02	Programming Paradigms	13-5	n/a
-13.04	Programming Language Basics	13-6	n/a
-13.04.01	Programming Language Overview	13-6	n/a
-13.04.02	Syntax and Semantics of Programming Languages	13-6	n/a
-13.04.03	Low-Level Programming Languages	13-7	n/a
-13.04.04	High-Level Programming Languages	13-7	n/a
-13.04.05	Declarative vs. Imperative Programming Languages	13-7	n/a
-13.05	Debugging Tools and Techniques	13-8	n/a
-13.05.01	Types of Errors	13-8	n/a
-13.05.02	Debugging Techniques	13-8	n/a
-13.05.03	Debugging Tools	13-8	n/a
-13.06	Data Structure and Representation	13-9	n/a
-13.06.01	Data Structure Overview	13-9	n/a
-13.06.02	Types of Data Structure	13-9	n/a
-13.06.03	Operations on Data Structures	13-9	n/a
-13.07	Algorithms and Complexity	13-10	n/a
-13.07.01	Overview of Algorithms	13-10	n/a
-13.07.02	Attributes of Algorithms	13-10	n/a
-13.07.03	Algorithmic Analysis	13-10	n/a
-13.07.04	Algorithmic Design Strategies	13-11	n/a
-13.07.05	Algorithmic Analysis Strategies	13-11	n/a
-13.08	Basic Concept of a System	13-11	n/a
-13.08.01	Emergent System Properties	13-11	n/a
-13.08.02	Systems Engineering	13-12	n/a
-13.08.03	Overview of a Computer System	13-12	n/a
-13.09	Computer Organization	13-13	n/a
-13.09.01	Computer Organization Overview	13-13	n/a
-13.09.02	Digital Systems	13-13	n/a
-13.09.03	Digital Logic	13-13	n/a
-13.09.04	Computer Expression of Data	13-13	n/a
-13.09.05	The Central Processing Unit (CPU)	13-14	n/a
-13.09.06	Memory System Organization	13-14	n/a
-13.09.07	Input and Output (I/O)	13-14	n/a
-13.10	Compiler Basics	13-15	n/a
-13.10.01	Compiler/Interpreter Overview	13-15	n/a
-13.10.02	Interpretation and Compilation	13-15	n/a
-13.10.03	The Compilation Process	13-15	n/a
-13.11	Operating Systems Basics	13-16	n/a
-13.11.01	Operating Systems Overview	13-16	n/a
-13.11.02	Tasks of an Operating System	13-16	n/a
-13.11.03	Operating System Abstractions	13-17	n/a
-13.11.04	Operating Systems Classification	13-17	n/a
-13.12	Database Basics and Data Management	13-17	n/a
-13.12.01	Entity and Schema	13-18	n/a
-13.12.02	Database Management Systems (DBMS)	13-18	n/a
-13.12.03	Database Query Language	13-18	n/a
-13.12.04	Tasks of DBMS Packages	13-18	n/a
-13.12.05	Data Management	13-19	n/a
-13.12.06	Data Mining	13-19	n/a
-13.13	Network Communication Basics	13-19	n/a
-13.13.01	Types of Network	13-19	n/a
-13.13.02	Basic Network Components	13-19	n/a
-13.13.03	Networking Protocols and Standards	13-20	n/a
-13.13.04	The Internet	13-20	n/a
-13.13.05	Internet of Things	13-20	n/a
-13.13.06	Virtual Private Network (VPN)	13-21	n/a
-13.14	Parallel and Distributed Computing	13-21	n/a
-13.14.01	Parallel and Distributed Computing Overview	13-21	n/a
-13.14.02	Difference between Parallel and Distributed Computing	13-21	n/a
-13.14.03	Parallel and Distributed Computing Models	13-21	n/a
-13.14.04	Main Issues in Distributed Computing	13-22	n/a
-13.15	Basic User Human Factors	13-22	n/a
-13.15.01	Input and Output	13-22	n/a
-13.15.02	Error Messages	13-23	n/a
-13.15.03	Software Robustness	13-23	n/a
-13.16	Basic Developer Human Factors	13-23	n/a
-13.16.01	Structure	13-24	n/a
-13.16.02	Comments	13-24	n/a
-13.17	Secure Software Development and Maintenance	13-24	n/a
-13.17.01	Software Requirements Security	13-24	n/a
-13.17.02	Software Design Security	13-25	n/a
-13.17.03	Software Construction Security	13-25	n/a
-13.17.04	Software Testing Security	13-25	n/a
-13.17.05	Build Security into Software Engineering Process	13-25	n/a
-13.17.06	Software Security Guidelines	13-25	n/a
-13.18	Matrix of Topics vs. Reference Material	13-27	n/a
-14	Mathematical Foundations	14-1	n/a
-14.01	Set, Relations, Functions	14-1	n/a
-14.01.01	Set Operations	14-2	n/a
-14.01.02	Properties of Set	14-3	n/a
-14.01.03	Relation and Function	14-4	n/a
-14.02	Basic Logic	14-5	n/a
-14.02.01	Propositional Logic	14-5	n/a
-14.02.02	Predicate Logic	14-5	n/a
-14.03	Proof Techniques	14-6	n/a
-14.03.01	Methods of Proving Theorems	14-6	n/a
-14.04	Basics of Counting	14-7	n/a
-14.05	Graphs and Trees	14-8	n/a
-14.05.01	Graphs	14-8	n/a
-14.05.02	Trees	14-10	n/a
-14.06	Discrete Probability	14-13	n/a
-14.07	Finite State Machines	14-14	n/a
-14.08	Grammars	14-15	n/a
-14.08.01	Language Recognition	14-16	n/a
-14.09	Numerical Precision, Accuracy, and Errors	14-17	n/a
-14.10	Number Theory	14-18	n/a
-14.10.01	Divisibility	14-18	n/a
-14.10.02	Prime Number, GCD	14-19	n/a
-14.11	Algebraic Structures	14-19	n/a
-14.11.01	Group	14-19	n/a
-14.11.02	Rings	14-20	n/a
-14.12	Matrix of Topics vs. Reference Material	14-21	n/a
-15	Engineering Foundations	15-1	n/a
-15.01	Empirical Methods and Experimental Techniques	15-1	n/a
-15.01.01	Designed Experiment	15-1	n/a
-15.01.02	Observational Study	15-2	n/a
-15.01.03	Retrospective Study	15-2	n/a
-15.02	Statistical Analysis	15-2	n/a
-15.02.01	Unit of Analysis (Sampling Units), Population, and Sample	15-2	n/a
-15.02.02	Concepts of Correlation and Regression	15-5	n/a
-15.03	Measurement	15-5	n/a
-15.03.01	Levels (Scales) of Measurement	15-6	n/a
-15.03.02	Direct and Derived Measures	15-7	n/a
-15.03.03	Reliability and Validity	15-8	n/a
-15.03.04	Assessing Reliability	15-8	n/a
-15.04	Engineering Design	15-8	n/a
-15.04.01	Engineering Design in Engineering Education	15-8	n/a
-15.04.02	Design as a Problem Solving Activity	15-9	n/a
-15.04.03	Steps Involved in Engineering Design	15-9	n/a
-15.05	Modeling, Simulation, and Prototyping	15-10	n/a
-15.05.01	Modeling	15-10	n/a
-15.05.02	Simulation	15-11	n/a
-15.05.03	Prototyping	15-11	n/a
-15.06	Standards	15-12	n/a
-15.07	Root Cause Analysis	15-12	n/a
-15.07.01	Techniques for Conducting Root Cause Analysis	15-13	n/a
-15.08	Matrix of Topics vs. Reference Material	15-14	n/a
-A	Knowledge Area Description Specifications	A-1	n/a
-B	IEEE and ISO/IEC Standards Supporting the Software Engineering Body of Knowledge (SWEBOK)	B-1	n/a
-C	Consolidated Reference List	C-1	n/a
+01	Software Requirements	1-1	 
+01.01	Software Requirements Fundamentals	1-2	 
+01.01.01	Definition of a Software Requirement	1-2	 
+01.01.02	Categories of Software Requirements	1-3	 
+01.01.03	Software Product Requirements and Software Project Requirements	1-3	 
+01.01.04	Functional Requirements	1-4	 
+01.01.05	Nonfunctional Requirements	1-4	 
+01.01.06	Technology Constraints	1-4	 
+01.01.07	Quality of Service Constraints	1-4	 
+01.01.08	Why Categorize Requirements This Way?	1-5	 
+01.01.09	System Requirements and Software Requirements	1-5	 
+01.01.10	Derived Requirements	1-6	 
+01.01.11	Software Requirements Activities	1-6	 
+01.02	Requirements Elicitation	1-6	 
+01.02.01	Requirements Sources	1-6	 
+01.02.02	Common Requirements Elicitation Techniques	1-7	 
+01.03	Requirements Analysis	1-8	 
+01.03.01	Basic Requirements Analysis	1-8	 
+01.03.02	Economics of Quality of Service Constraints	1-8	 
+01.03.03	Formal Analysis	1-9	 
+01.03.04	Addressing Conflict in Requirements	1-10	 
+01.04	Requirements Specification	1-10	 
+01.04.01	Unstructured Natural Language Requirements Specification	1-11	 
+01.04.02	Structured Natural Language Requirements Specification	1-12	 
+01.04.03	Acceptance Criteria-Based Requirements Specification	1-12	 
+01.04.04	Model-Based Requirements Specification	1-14	 
+01.04.05	Additional Attributes of Requirement	1-14	 
+01.04.06	Incremental and Comprehensive Requirements Specification	1-15	 
+01.05	Requirements Validation	1-15	 
+01.05.01	Requirements Reviews	1-15	 
+01.05.02	Simulation and Execution	1-16	 
+01.05.03	Prototyping	1-16	 
+01.06	Requirements Management Activities	1-16	 
+01.06.01	Requirements Scrubbing	1-16	 
+01.06.02	Requirements Change Control	1-17	 
+01.06.03	Scope Matching	1-17	 
+01.07	Practical Considerations	1-17	 
+01.07.01	Iterative Nature of the Requirements Process	1-17	 
+01.07.02	Requirements Prioritization	1-17	 
+01.07.03	Requirements Tracing	1-18	 
+01.07.04	Requirements Stability and Volatility	1-19	 
+01.07.05	Measuring Requirements	1-19	 
+01.07.06	Requirements Process Quality and Improvement	1-19	 
+01.08	Software Requirements Tools	1-20	 
+01.08.01	Requirements Management Tools	1-20	 
+01.08.02	Requirements Modeling Tools	1-20	 
+01.08.03	Functional Test Case Generation Tools	1-20	 
+02	Software Architecture	2-1	 
+02.01	Software Architecture Fundamentals	2-1	 
+02.01.01	The Senses of 'Architecture'	2-1	 
+02.01.02	Stakeholders and Concerns	2-3	 
+02.01.03	Uses of Architecture	2-4	 
+02.02	Software Architecture Description	2-4	 
+02.02.01	Architecture Views and Viewpoints	2-5	 
+02.02.02	Architecture Patterns, Styles and Reference Architectures	2-6	 
+02.02.03	Architecture Description Languages and Architecture Frameworks	2-7	 
+02.02.04	Architecture as Significant Decisions	2-7	 
+02.03	Software Architecture Process	2-8	 
+02.03.01	Architecture in Context	2-8	 
+02.03.01.01	Relation of Architecture to Design	2-9	 
+02.03.02	Architectural Design	2-9	 
+02.03.02.01	Architecture Analysis	2-9	 
+02.03.02.02	Architecture Synthesis	2-9	 
+02.03.02.03	Architecture Evaluation	2-10	 
+02.03.03	Architecture Practices, Methods, and Tactics	2-10	 
+02.03.04	Architecting in the Large	2-10	 
+02.04	Software Architecture Evaluation	2-10	 
+02.04.01	Goodness in Architecture	2-10	 
+02.04.02	Reasoning about Architectures	2-11	 
+02.04.03	Architecture Reviews	2-11	 
+02.04.04	Architecture Metrics	2-11	 
+03	Software Design	3-1	 
+03.01	Software Design Fundamentals	3-2	 
+03.01.01	Design Thinking	3-2	 
+03.01.02	Context of Software Design	3-2	 
+03.01.03	Key Issues in Software Design	3-3	 
+03.01.04	Software Design Principles	3-3	 
+03.02	Software Design Processes	3-5	 
+03.02.01	High-Level Design	3-6	 
+03.02.02	Detailed Design	3-6	 
+03.03	Software Design Qualities	3-6	 
+03.03.01	Concurrency	3-6	 
+03.03.02	Control and Event Handling	3-6	 
+03.03.03	Data Persistence	3-7	 
+03.03.04	Distribution of Components	3-7	 
+03.03.05	Errors and Exception Handling, Fault Tolerance	3-7	 
+03.03.06	Integration and Interoperability	3-7	 
+03.03.07	Assurance, Security, and Safety	3-7	 
+03.03.08	Variability	3-7	 
+03.04	Recording Software Designs	3-7	 
+03.04.01	Model-Based Design	3-8	 
+03.04.02	Structural Design Descriptions	3-8	 
+03.04.03	Behavioral Design Descriptions	3-9	 
+03.04.04	Design Patterns and Styles	3-10	 
+03.04.05	Specialized and Domain-Specific Languages	3-10	 
+03.04.06	Design Rationale	3-11	 
+03.05	Software Design Strategies and Methods	3-11	 
+03.05.01	General Strategies	3-11	 
+03.05.02	Function-Oriented (or Structured) Design	3-11	 
+03.05.03	Data-Centered Design	3-11	 
+03.05.04	Object-Oriented Design	3-11	 
+03.05.05	User-Centered Design	3-12	 
+03.05.06	Component-Based Design (CBD)	3-12	 
+03.05.07	Event-Driven Design	3-12	 
+03.05.08	Aspect-Oriented Design (AOD)	3-12	 
+03.05.09	Constraint-Based Design	3-12	 
+03.05.10	Domain-Driven Design	3-13	 
+03.05.11	Other Methods	3-13	 
+03.06	Software Design Quality Analysis and Evaluation	3-13	 
+03.06.01	Design Reviews and Audits	3-13	 
+03.06.02	Quality Attributes	3-13	 
+03.06.03	Quality Analysis and Evaluation Techniques	3-13	 
+03.06.04	Measures and Metrics	3-14	 
+03.06.05	Verification, Validation, and Certification	3-14	 
+04	Software Construction	4-1	 
+04.01	Software Construction Fundamentals	4-2	 
+04.01.01	Minimizing Complexity	4-2	 
+04.01.02	Anticipating and Embracing Change	4-2	 
+04.01.03	Constructing for Verification	4-4	 
+04.01.04	Reusing Assets	4-4	 
+04.01.05	Applying Standards in Construction	4-4	 
+04.02	Managing Construction	4-4	 
+04.02.01	Construction in Life Cycle Models	4-4	 
+04.02.02	Construction Planning	4-5	 
+04.02.03	Construction Measurement	4-5	 
+04.02.04	Managing Dependencies	4-5	 
+04.03	Practical Considerations	4-6	 
+04.03.01	Construction Design	4-6	 
+04.03.02	Construction Languages	4-6	 
+04.03.03	Coding	4-7	 
+04.03.04	Construction Testing	4-7	 
+04.03.05	Reuse in Construction	4-7	 
+04.03.06	Construction Quality	4-8	 
+04.03.07	Integration	4-9	 
+04.03.08	Cross-Platform Development and Migration	4-9	 
+04.04	Construction Technologies	4-10	 
+04.04.01	API Design and Use	4-10	 
+04.04.02	Object-Oriented Runtime Issues	4-10	 
+04.04.03	Parameterization, Templates, and Generics	4-10	 
+04.04.04	Assertions, Design by Contract, and Defensive Programming	4-10	 
+04.04.05	Error Handling, Exception Handling, and Fault Tolerance	4-11	 
+04.04.06	Executable Models	4-11	 
+04.04.07	State-Based and Table-Driven Construction Techniques	4-11	 
+04.04.08	Runtime Configuration and Internationalization	4-12	 
+04.04.09	Grammar-Based Input Processing	4-12	 
+04.04.10	Concurrency Primitives	4-12	 
+04.04.11	Middleware	4-12	 
+04.04.12	Construction Methods for Distributed and Cloud-Based Software	4-13	 
+04.04.13	Constructing Heterogeneous Systems	4-13	 
+04.04.14	Performance Analysis and Tuning	4-13	 
+04.04.15	Platform Standards	4-13	 
+04.04.16	Test-First Programming	4-14	 
+04.04.17	Feedback Loop for Construction	4-14	 
+04.05	Software Construction Tools	4-14	 
+04.05.01	Development Environments	4-14	 
+04.05.02	Visual Programming and Low-Code/Zero-Code Platforms	4-14	 
+04.05.03	Unit Testing Tools	4-15	 
+04.05.04	Profiling, Performance Analysis, and Slicing Tools	4-15	 
+05	Software Testing	5-1	 
+05.01	Software Testing Fundamentals	5-3	 
+05.01.01. Faults vs	Failures	5-3	 
+05.01.02	Key Issues	5-4	 
+05.01.02.01	Test Case Creation	5-4	 
+05.01.02.02	Test Selection and Adequacy Criteria	5-4	 
+05.01.02.03	Prioritization/Minimization	5-4	 
+05.01.02.04	Purpose of Testing	5-4	 
+05.01.02.05	Assessment and Certification	5-4	 
+05.01.02.06	Testing for Quality Assurance/Improvement	5-4	 
+05.01.02.07	The Oracle Problem	5-4	 
+05.01.02.08	Theoretical and Practical Limitations	5-5	 
+05.01.02.09	The Problem of Infeasible Paths	5-5	 
+05.01.02.10	Testability	5-5	 
+05.01.02.11	Test Execution and Automation	5-5	 
+05.01.02.12	Scalability	5-5	 
+05.01.02.13	Test Effectiveness	5-5	 
+05.01.02.14	Controllability, Replication, and Generalization	5-5	 
+05.01.02.15	Off-Line vs Online Testing	5-6	 
+05.01.03	Relationship of Testing to Other Activities	5-6	 
+05.02	Test Levels	5-6	 
+05.02.01	The Target of the Test	5-6	 
+05.02.01.01	Unit Testing	5-6	 
+05.02.01.02	Integration Testing	5-7	 
+05.02.01.03	System Testing	5-7	 
+05.02.01.04	Acceptance Testing	5-7	 
+05.02.02	Objectives of Testing	5-7	 
+05.02.02.01	Conformance Testing	5-7	 
+05.02.02.02	Compliance Testing	5-8	 
+05.02.02.03	Installation Testing	5-8	 
+05.02.02.04	Alpha and Beta Testing	5-8	 
+05.02.02.05	Regression Testing	5-8	 
+05.02.02.06	Prioritization Testing	5-8	 
+05.02.02.07	Non-functional Testing	5-8	 
+05.02.02.08	Security Testing	5-9	 
+05.02.02.09	Privacy Testing	5-9	 
+05.02.02.10	Interface and Application Program Interface (API) Testing	5-10	 
+05.02.02.11	Configuration Testing	5-10	 
+05.02.02.12	Usability and Human-Computer Interaction Testing	5-10	 
+05.03	Test Techniques	5-10	 
+05.03.01	Specification-Based Techniques	5-10	 
+05.03.01.01	Equivalence Partitioning	5-11	 
+05.03.01.02	Boundary-Value Analysis	5-11	 
+05.03.01.03	Syntax Testing	5-11	 
+05.03.01.04	Combinatorial Test Techniques	5-11	 
+05.03.01.05	Decision Table	5-11	 
+05.03.01.06	Cause-Effect Graphing	5-11	 
+05.03.01.07	State Transition Testing	5-12	 
+05.03.01.08	Scenario-Based Testing	5-12	 
+05.03.01.09	Random Testing	5-12	 
+05.03.01.10	Evidence-Based	5-12	 
+05.03.01.11	Forcing Exception	5-12	 
+05.03.02	Structure-Based Test Techniques	5-13	 
+05.03.02.01	Control Flow Testing	5-13	 
+05.03.02.02	Data Flow Testing	5-13	 
+05.03.02.03	Reference Models for Structure-Based Test Techniques	5-13	 
+05.03.03	Experience-Based Techniques	5-13	 
+05.03.03.01	Error Guessing	5-13	 
+05.03.03.02	Exploratory Testing	5-13	 
+05.03.03.03	Further Experience-Based Techniques	5-14	 
+05.03.04	Fault-Based and Mutation Techniques	5-14	 
+05.03.05	Usage-Based Techniques	5-15	 
+05.03.05.01	Operational Profile	5-15	 
+05.03.05.02	User Observation Heuristics	5-15	 
+05.03.06	Techniques Based on the Nature of the Application	5-15	 
+05.03.07	Selecting and Combining Techniques	5-16	 
+05.03.07.01	Combining Functional and Structural	5-16	 
+05.03.07.02. Deterministic vs	Random	5-16	 
+05.03.08	Techniques Based on Derived Knowledge	5-16	 
+05.04	Test-Related Measures	5-16	 
+05.04.01	Evaluation of the SUT	5-17	 
+05.04.01.01	SUT Measurements that Aid in Planning and Designing Tests	5-17	 
+05.04.01.02	Fault Types, Classification and Statistics	5-17	 
+05.04.01.03	Fault Density	5-17	 
+05.04.01.04	Life Test, Reliability Evaluation	5-17	 
+05.04.01.05	Reliability Growth Models	5-17	 
+05.04.02	Evaluation of the Tests Performed	5-18	 
+05.04.02.01	Fault Injection	5-18	 
+05.04.02.02	Mutation Score	5-18	 
+05.04.02.03	Comparison and Relative Effectiveness of Different Techniques	5-18	 
+05.05	Test Process	5-18	 
+05.05.01	Practical Considerations	5-19	 
+05.05.01.01	Attitudes/Egoless Programming	5-19	 
+05.05.01.02	Test Guides and Organizational Process	5-19	 
+05.05.01.03	Test Management and Dynamic Test Processes	5-19	 
+05.05.01.04	Test Documentation	5-19	 
+05.05.01.05	Test Team	5-20	 
+05.05.01.06	Test Process Measures	5-20	 
+05.05.01.07	Test Monitoring and Control	5-20	 
+05.05.01.08	Test Completion	5-20	 
+05.05.01.09	Test Reusability	5-21	 
+05.05.02	Test Sub-Processes and Activities	5-21	 
+05.05.02.01	Test Planning Process	5-2	
+05.05.02.02	Test Design and Implementation	5-21	 
+05.05.02.03	Test Environment Set-up and Maintenance	5-21	 
+05.05.02.04	Controlled Experiments and Test Execution	5-22	 
+05.05.02.05	Test Incident Reporting	5-22	 
+05.05.03	Staffing	5-22	 
+05.06	Software Testing in the Development Processes and the Application Domains	5-23	 
+05.06.01	Testing Inside Software Development Processes	5-23	 
+05.06.01.01	Testing in Traditional Processes	5-23	 
+05.06.01.02	Testing in Line with Shift-Left Movement	5-23	 
+05.06.02	Testing in the Application Domains	5-24	 
+05.07	Testing of and Testing Through Emerging Technologies	5-26	 
+05.07.01	Testing of Emerging Technologies	5-26	 
+05.07.02	Testing Through Emerging Technologies	5-27	 
+05.08	Software Testing Tools	5-29	 
+05.08.01	Testing Tool Support and Selection	5-29	 
+05.08.02	Categories of Tools	5-29	 
+06	Software Engineering Operations	6-1	 
+06.01	Software Engineering Operations Fundamentals	6-3	 
+06.01.01	Definition of Software Engineering Operations	6-3	 
+06.01.02	Software Engineering Operations Processes	6-4	 
+06.01.03	Software Installation	6-5	 
+06.01.04	Scripting and Automating	6-5	 
+06.01.05	Effective Testing and Troubleshooting	6-5	 
+06.01.06	Performance, Reliability and Load Balancing	6-6	 
+06.02	Software Engineering Operations Planning	6-6	 
+06.02.01	Operations Plan and Supplier Management	6-6	 
+06.02.01.01	Operations Plan	6-6	 
+06.02.01.02	Supplier Management	6-7	 
+06.02.02	Development and Operational Environments	6-7	 
+06.02.03	Software Availability, Continuity, and Service Levels	6-8	 
+06.02.04	Software Capacity Management	6-8	 
+06.02.05	Software Backup, Disaster Recovery, and Failover	6-8	 
+06.02.06	Software and Data Safety, Security, Integrity, Protection, and Controls	6-9	 
+06.03	Software Engineering Operations Delivery	6-9	 
+06.03.01	Operational Testing, Verification, and Acceptance	6-9	 
+06.03.02	Deployment/Release Engineering	6-10	 
+06.03.03	Rollback and Data Migration	6-10	 
+06.03.04	Change Management	6-11	 
+06.03.05	Problem Management	6-11	 
+06.04	Software Engineering Operations Control	6-11	 
+06.04.01	Incident Management	6-11	 
+06.04.02	Monitor, Measure, Track, and Review	6-11	 
+06.04.03	Operations Support	6-12	 
+06.04.04	Operations Service Reporting	6-12	 
+06.05	Practical Considerations	6-12	 
+06.05.01	Incident and Problem Prevention	6-12	 
+06.05.02	Operational Risk Management	6-12	 
+06.05.03	Automating Software Engineering Operations	6-12	 
+06.05.04	Software Engineering Operations for Small Organizations	6-13	 
+06.06	Software Engineering Operations Tools	6-13	 
+06.06.01	Containers and Virtualization	6-13	 
+06.06.02	Deployment	6-13	 
+06.06.03	Automated Test	6-14	 
+06.06.04	Monitoring and Telemetry	6-14	 
+07	Software Maintenance	7-1	 
+07.01	Software Maintenance Fundamentals	7-2	 
+07.01.01	Definitions and Terminology	7-2	 
+07.01.02	Nature of Software Maintenance	7-2	 
+07.01.03	Need for Software Maintenance	7-3	 
+07.01.04	Majority of Maintenance Costs	7-3	 
+07.01.05	Evolution of Software	7-3	 
+07.01.06	Categories of Software Maintenance	7-4	 
+07.02	Key Issues in Software Maintenance	7-5	 
+07.02.01	Technical Issues	7-5	 
+07.02.01.01	Limited Understanding	7-5 
+07.02.01.02	Testing	7-5 
+07.02.01.03	Impact Analysis	7-6 
+07.02.01.04	Maintainability	7-6 
+07.02.02	Management Issues	7-7	 
+07.02.02.01	Alignment with Organizational Objectives	7-7	 
+07.02.02.02	Staffing	7-7	 
+07.02.02.03	Process	7-8	 
+07.02.02.04	Supplier Management	7-8	 
+07.02.02.05	Organizational Aspects of Maintenance	7-8	 
+07.02.03	Software Maintenance Costs	7-9	 
+07.02.03.01	Technical Debt Cost Estimation	7-9	 
+07.02.03.02	Maintenance Cost Estimation	7-9	 
+07.02.04	Software Maintenance Measurement	7-10	 
+07.03	Software Maintenance Processes	7-11	 
+07.03.01	Software Maintenance Processes	7-11	 
+07.03.02	Software Maintenance Activities and Tasks	7-11	 
+07.03.02.01	Supporting and Monitoring Activities	7-12	 
+07.03.02.02	Planning Activities	7-12	 
+07.03.02.03	Configuration Management	7-13	 
+07.03.02.04	Software Quality	7-13	 
+07.04	Software Maintenance Techniques	7-13	 
+07.04.01	Program Comprehension	7-13	 
+07.04.02	Software Reengineering	7-13	 
+07.04.03	Reverse Engineering	7-14	 
+07.04.04	Continuous Integration, Delivery, Testing, and Deployment	7-14	 
+07.04.05	Visualizing Maintenance	7-15	 
+07.05	Software Maintenance Tools	7-15	 
+08	Software Configuration Management	8-1	 
+08.01	Management of the SCM Process	8-2	 
+08.01.01	Organizational Context for SCM	8-2	 
+08.01.02	Constraints and Guidance for the SCM Process	8-3	 
+08.01.03	Planning for SCM	8-3	 
+08.01.03.01	SCM Organization and Responsibilities	8-4	 
+08.01.03.02	SCM Resources and Schedules	8-4	 
+08.01.03.03	Tool Selection and Implementation	8-4	 
+08.01.03.04	Vendor/Subcontractor Control	8-5	 
+08.01.03.05	Interface Control	8-5	 
+08.01.04	SCM Plan	8-5	 
+08.01.05	Monitoring of Software Configuration Management	8-5	 
+08.01.05.01	SCM Measures and Measurement	8-6 
+08.01.05.02	In-Process Audits of SCM	8-6 
+08.02	Software Configuration Identification	8-6	 
+08.02.01	Identifying Items to Be Controlled	8-6	 
+08.02.01.01	Software Configuration	8-6 
+08.02.01.02	Software Configuration Item	8-6 
+08.02.02	Configuration Item Identifiers and Attributes	8-7	 
+08.02.03	Baseline Identification	8-7	 
+08.02.04	Baseline Attributes	8-7	 
+08.02.05	Relationships Scheme Definition	8-7	 
+08.02.06	Software Libraries	8-8	 
+08.03	Software Configuration Change Control	8-9	 
+08.03.01	Requesting, Evaluating, and Approving Software Changes	8-9	 
+08.03.01.01	Software Configuration Control Board	8-10 
+08.03.01.02	Software Change Request Process	8-10 
+08.03.01.03	Software Change Request Forms Definition	8-10 
+08.03.02	Implementing Software Changes	8-10	 
+08.03.03	Deviations and Waivers	8-11	 
+08.04	Software Configuration Status Accounting	8-11	 
+08.04.01	Software Configuration Status Information	8-11	 
+08.04.02	Software Configuration Status Reporting	8-11	 
+08.05	Software Configuration Auditing	8-12	 
+08.05.01	Software Functional Configuration Audit	8-12	 
+08.05.02	Software Physical Configuration Audit	8-12	 
+08.05.03	In-Process Audits of a Software Baseline	8-12	 
+08.06	Software Release Management and Delivery	8-13	 
+08.06.01	Software Building	8-13	 
+08.06.02	Software Release Management	8-13	 
+08.07	Software Configuration Management Tools	8-14	 
+09	Software Engineering Management	9-1	 
+09.01	Initiation and Scope Definition	9-6	 
+09.01.01	Determination and Negotiation of Requirements	9-6	 
+09.01.02	Feasibility Analysis	9-6	 
+09.01.03	Process for the Review and Revision of Requirements	9-7	 
+09.02	Software Project Planning	9-7	 
+09.02.01	Process Planning	9-8	 
+09.02.02	Determine Deliverables	9-8	 
+09.02.03	Effort, Schedule, and Cost Estimation	9-8	 
+09.02.04	Resource Allocation	9-9	 
+09.02.05	Risk Management	9-9	 
+09.02.06	Quality Management	9-9	 
+09.02.07	Plan Management	9-10	 
+09.03	Software Project Execution	9-11	 
+09.03.01	Implementation of Plans	9-11	 
+09.03.02	Software Acquisition and Supplier Contract Management	9-11	 
+09.03.03	Implementation of Measurement Process	9-12	 
+09.03.04	Monitor Process	9-12	 
+09.03.05	Control Process	9-12	 
+09.03.06	Reporting	9-13	 
+09.04	Software Review and Evaluation	9-13	 
+09.04.01	Determining Satisfaction of Requirements	9-13	 
+09.04.02	Reviewing and Evaluating Performance	9-13	 
+09.05	Closure	9-13	 
+09.05.01	Determining Closure	9-13	 
+09.05.02	Closure Activities	9-14	 
+09.06	Software Engineering Measurement	9-14	 
+09.06.01	Establish and Sustain Measurement Commitment	9-14	 
+09.06.02	Plan the Measurement Process	9-15	 
+09.06.03	Perform the Measurement Process	9-15	 
+09.06.04	Evaluate Measurement	9-16	 
+09.07	Software Engineering Management Tools	9-16	 
+10	Software Engineering Process	10-1	 
+10.01	Software Engineering Process Fundamentals	10-1	 
+10.01.01	Introduction	10-1	 
+10.01.02	Software Engineering Process Definition	10-3	 
+10.02	Life Cycles	10-3	 
+10.02.01	Life Cycle Definition, Process Categories, and Terminology	10-3	 
+10.02.02	Rationale for Life Cycles	10-4	 
+10.02.03	The Concepts of Process Models and Life Cycle Models	10-5	 
+10.02.04	Some Paradigms for Development Life Cycle Models	10-5	 
+10.02.05	Development Life Cycle Models and Their Engineering Dimension	10-6	 
+10.02.06	The Management of SLCPs	10-7	 
+10.02.07	Software Engineering Process Management	10-8	 
+10.02.08	Software Life Cycle Adaptation	10-8	 
+10.02.09	Practical Considerations	10-8	 
+10.02.10	Software Process Infrastructure, Tools, Methods	10-9	 
+10.02.11	Software Engineering Process Monitoring and its Relationship with the Software Product	10-9	 
+10.03	Software Process Assessment and Improvement	10-9	 
+10.03.01	Overview of Software Process Assessment and Improvement	10-9	 
+10.03.02	Goal-Question-Metric (GQM)	10-10	 
+10.03.03	Framework-Based Methods	10-10	 
+10.03.04	Process Assessment and Improvement in Agile	10-10	 
+11	Software Engineering Models and Methods	11-1	 
+11.01	Modeling	11-1	 
+11.01.01	Modeling Principles	11-2	 
+11.01.02	Properties and Expression of Models	11-3	 
+11.01.03	Syntax, Semantics, and Pragmatics	11-3	 
+11.01.04	Preconditions, Postconditions, and Invariants	11-4	 
+11.02	Types of Models	11-4	 
+11.02.01	Structural Modeling	11-5	 
+11.02.02	Behavioral Modeling	11-5	 
+11.03	Analysis of Models	11-5	 
+11.03.01	Analyzing for Completeness	11-6	 
+11.03.02	Analyzing for Consistency	11-6	 
+11.03.03	Analyzing for Correctness	11-6	 
+11.03.04	Analyzing for Traceability	11-6	 
+11.03.05	Analyzing for Interaction	11-6	 
+11.04	Software Engineering Methods	11-7	 
+11.04.01	Heuristic Methods	11-7	 
+11.04.02	Formal Methods	11-8	 
+11.04.03	Prototyping Methods	11-9	 
+11.04.04	Agile Methods	11-10	 
+12	Software Quality	12-1	 
+12.01	Software Quality Fundamentals	12-3	 
+12.01.01	Software Engineering Culture and Ethics	12-3	 
+12.01.02	Value and Costs of Quality	12-4	 
+12.01.03	Standards, Models, and Certifications	12-4	 
+12.01.04	Software Dependability and Integrity Levels	12-5	 
+12.01.04.01	Dependability	12-5 
+12.01.04.02	Integrity Levels of Software	12-6	 
+12.02	Software Quality Management Process	12-6	 
+12.02.01	Software Quality Improvement	12-7	 
+12.02.02	Plan Quality Management	12-7	 
+12.02.03	Evaluate Quality Management	12-8	 
+12.02.03.01	Software Quality Measurement	12-8 
+12.02.04	Perform Corrective and Preventive Actions	12-9	 
+12.02.04.01	Defect Characterization	12-9	 
+12.03	Software Quality Assurance Process	12-10	 
+12.03.01	Prepare for Quality Assurance	12-10	 
+12.03.02	Perform Process Assurance	12-10	 
+12.03.03	Perform Product Assurance	12-11	 
+12.03.04	V&V and Testing	12-12	 
+12.03.04.01	Static Analysis Techniques	12-13 
+12.03.04.02	Dynamic Analysis Techniques	12-13	 
+12.03.04.03	Formal Analysis Techniques	12-13	 
+12.03.04.04	Software Quality Control and Testing	12-13	 
+12.03.04.05	Technical Reviews and Audits	12-14	 
+12.04	Software Quality Tools	12-15	 
+13	Software Security	13-1	 
+13.01	Software Security Fundamentals	13-1	 
+13.01.01	Software Security	13-1	 
+13.01.02	Information Security	13-1	 
+13.01.03	Cybersecurity	13-2	 
+13.02	Security Management and Organization	13-2	 
+13.02.01	Capability Maturity Model	13-2	 
+13.02.02	Information Security Management System	13-2	 
+13.02.03	Agile Practice for Software Security	13-3	 
+13.03	Software Security Engineering and Processes	13-3	 
+13.03.01	Security Engineering and Secure Development Life Cycle (SDLC)	13-3	 
+13.03.02	Common Criteria for Information Technology Security Evaluation	13-3	 
+13.04	Security Engineering for Software Systems	13-3	 
+13.04.01	Security Requirements	13-3	 
+13.04.02	Security Design	13-4	 
+13.04.03	Security Patterns	13-4	 
+13.04.04	Construction for Security	13-4	 
+13.04.05	Security Testing	13-5	 
+13.04.06	Vulnerability Management	13-5	 
+13.05	Software Security Tools	13-5	 
+13.05.01	Security Vulnerability Checking Tools	13-5	 
+13.05.02	Penetration Testing Tools	13-6	 
+13.06	Domain-Specific Software Security	13-6	 
+13.06.01	Security for Container and Cloud	13-6	 
+13.06.02	Security for IoT Software	13-6	 
+13.06.03	Security for Machine Learning-Based	13-6	 
+14	Software Engineering Professional Practice	14-1	n/a
+14.01	Professionalism	14-2	n/a
+14.01.01	Accreditation, Certification and Qualification, and Licensing	14-2	n/a
+14.01.01.01	Accreditation	14-2	n/a
+14.01.01.02	Certification and Qualification	14-3	n/a
+14.01.01.03	Licensing	14-3	n/a
+14.01.02	Codes of Ethics and Professional Conduct	14-3	n/a
+14.01.03	Nature and Role of Professional Societies	14-4	n/a
+14.01.04	Nature and Role of Software Engineering Standards	14-4	n/a
+14.01.05	Economic Impact of Software	14-5	n/a
+14.01.06	Employment Contracts	14-5	n/a
+14.01.07	Legal Issues	14-6	n/a
+14.01.07.01	Standards	14-6	n/a
+14.01.07.02	Trademarks	14-6	n/a
+14.01.07.03	Patents	14-6	n/a
+14.01.07.04	Copyrights	14-6	n/a
+14.01.07.05	Trade Secrets	14-6	n/a
+14.01.07.06	Professional Liability	14-7	n/a
+14.01.07.07	Legal Requirements	14-7	n/a
+14.01.07.08	Trade Compliance	14-7	n/a
+14.01.07.09	Cybercrime	14-7	n/a
+14.01.07.10	Data Privacy	14-8	n/a
+14.01.08	Documentation	14-8	n/a
+14.01.09	Trade-Off Analysis	14-9	n/a
+14.02	Group Dynamics and Psychology	14-9	n/a
+14.02.01	Dynamics of Working in Teams/Groups	14-9	n/a
+14.02.02	Individual Cognition	14-10	n/a
+14.02.03	Dealing with Problem Complexity	14-10	n/a
+14.02.04	Interacting with Stakeholders	14-10	n/a
+14.02.05	Dealing with Uncertainty and Ambiguity	14-11	n/a
+14.02.06	Dealing with Equity, Diversity, and Inclusivity	14-11	n/a
+14.03	Communication Skills	14-11	n/a
+14.03.01	Reading, Understanding, and Summarizing	14-12	n/a
+14.03.02	Writing	14-12	n/a
+14.03.03	Team and Group Communication	14-12	n/a
+14.03.04	Presentation Skills	14-12	n/a
+15	Software Engineering Economics	15-1	n/a
+15.01	Software Engineering Economics Fundamentals	15-3	n/a
+15.01.01	Proposals	15-3	n/a
+15.01.02	Cash Flow	15-3	n/a
+15.01.03	Time-Value of Money	15-3	n/a
+15.01.04	Equivalence	15-4	n/a
+15.01.05	Bases for Comparison	15-4	n/a
+15.01.06	Alternatives	15-4	n/a
+15.01.07	Intangible Assets	15-4	n/a
+15.01.08	Business Model	15-5	n/a
+15.02	The Engineering Decision-Making Process	15-5	n/a
+15.02.01	Process Overview	15-5	n/a
+15.02.02	Understand the Real Problem	15-5	n/a
+15.02.03	Identify All Reasonable Technically Feasible Solutions	15-6	n/a
+15.02.04	Define the Selection Criteria	15-6	n/a
+15.02.05	Evaluate Each Alternative Against the Selection Criteria	15-6	n/a
+15.02.06	Select the Preferred Alternative	15-6	n/a
+15.02.07	Monitor the Performance of the Selected Alternative	15-7	n/a
+15.03	For-Profit Decision-Making	15-7	n/a
+15.03.01	Minimum Acceptable Rate of Return	15-7	n/a
+15.03.02	Economic Life	15-7	n/a
+15.03.03	Planning Horizon	15-8	n/a
+15.03.04	Replacement Decisions	15-8	n/a
+15.03.05	Retirement Decisions	15-9	n/a
+15.03.06	Advanced For-Profit Decision Considerations	15-9	n/a
+15.04	Nonprofit Decision-Making	15-9	n/a
+15.04.01	Benefit-Cost Analysis	15-9	n/a
+15.04.02	Cost-Effectiveness Analysis	15-9	n/a
+15.05	Present Economy Decision-Making	15-9	n/a
+15.05.01	Break-Even Analysis	15-9	n/a
+15.05.02	Optimization Analysis	15-9	n/a
+15.06	Multiple-Attribute Decision-Making	15-10	n/a
+15.06.01	Compensatory Techniques	15-10	n/a
+15.06.02	Non-Compensatory Techniques	15-10	n/a
+15.07	Identifying and Characterizing Intangible Assets	15-10	n/a
+15.07.01	Identify Processes and Define Business Goals	15-10	n/a
+15.07.02	Identify Intangible Assets Linked with Business Goal	15-11	n/a
+15.07.03	Identify Software Products That Support Intangible Assets	15-11	n/a
+15.07.04	Define and Measure Indicators	15-11	n/a
+15.07.05	Intangible Asset Characterization	15-11	n/a
+15.07.06	Link Specific Intangible Assets with the Business Model	15-13	n/a
+15.07.07	Decision-Making	15-13	n/a
+15.08	Estimation	15-13	n/a
+15.08.01	Expert Judgment	15-14	n/a
+15.08.02	Analogy	15-15	n/a
+15.08.03	Decomposition	15-15	n/a
+15.08.04	Parametric	15-15	n/a
+15.08.05	Multiple Estimates	15-15	n/a
+15.09	Practical Considerations	15-16	n/a
+15.09.01	Business Case	15-16	n/a
+15.09.02	Multiple-Currency Analysis	15-16	n/a
+15.09.03	Systems Thinking	15-16	n/a
+15.10	Related Concepts	15-16	n/a
+15.10.01	Accounting	15-16	n/a
+15.10.02	Cost and Costing	15-16	n/a
+15.10.03	Finance	15-17	n/a
+15.10.04	Controlling	15-17	n/a
+15.10.05	Efficiency and Effectiveness	15-17	n/a
+15.10.06	Productivity	15-18	n/a
+15.10.07	Product or Service	15-18	n/a
+15.10.08	Project	15-18	n/a
+15.10.09	Program	15-18	n/a
+15.10.10	Portfolio	15-18	n/a
+15.10.11	Product Life Cycle	15-19	n/a
+15.10.12	Project Life Cycle	15-19	n/a
+15.10.13	Price and Pricing	15-19	n/a
+15.10.14	Prioritization	15-19	n/a
+16	Computing Foundations	16-1	n/a
+16.01	Basic Concepts of a System or Solution	16-2	n/a
+16.02	Computer Architecture and Organization	16-3	n/a
+16.02.01	Computer Architecture	16-3	n/a
+16.02.02	Types of Computer Architectures	16-3	n/a
+16.02.02.01	Von Neumann Architecture	16-3	n/a
+16.02.02.02	Harvard Architecture	16-4	n/a
+16.02.02.03	Instruction Set Architecture	16-4	n/a
+16.02.02.04	Flynn s Architecture or Taxonomy	16-5	n/a
+16.02.02.05	System Architecture	16-5	n/a
+16.02.03	Microarchitecture or Computer Organization	16-5	n/a
+16.02.03.01	Arithmetic Logic Unit	16-5	n/a
+16.02.03.02	Memory Unit	16-6	n/a
+16.02.03.03	Input/Output Devices	16-6	n/a
+16.02.03.04	Control Unit	16-6	n/a
+16.03	Data Structures and Algorithms	16-6	n/a
+16.03.01	Types of Data Structures	16-6	n/a
+16.03.02	Operations on Data Structures	16-7	n/a
+16.03.03	Algorithms and Attributes of Algorithms	16-7	n/a
+16.03.04	Algorithm Complexity	16-8	n/a
+16.03.05	Measurement of Complexity	16-8	n/a
+16.03.06	Designing Algorithms	16-8	n/a
+16.03.07	Sorting Techniques	16-9	n/a
+16.03.08	Searching Techniques	16-10	n/a
+16.03.09	Hashing	16-10	n/a
+16.04	Programming Fundamentals and Languages	16-10	n/a
+16.04.01	Programming Language Types	16-10	n/a
+16.04.02	Programming Syntax, Semantics, Type Systems	16-11	n/a
+16.04.03	Subprograms and Coroutines	16-11	n/a
+16.04.04	Object-Oriented Programming	16-12	n/a
+16.04.05	Distributed Programming and Parallel Programming	16-13	n/a
+16.04.06	Debugging	16-13	n/a
+16.04.07	Standards and Guidelines	16-13	n/a
+16.05	Operating Systems	16-15	n/a
+16.05.01	Processor Management	16-15	n/a
+16.05.02	Memory Management	16-16	n/a
+16.05.03	Device Management	16-16	n/a
+16.05.04	Information Management	16-16	n/a
+16.05.05	Network Management	16-16	n/a
+16.06	Database Management	16-17	n/a
+16.06.01	Schema	16-17	n/a
+16.06.02	Data Models and Storage Models	16-17	n/a
+16.06.03	Database Management Systems	16-18	n/a
+16.06.04	Relational Database Management Systems and Normalization	16-18	n/a
+16.06.05	Structured Query Language	16-19	n/a
+16.06.06	Data Mining and Data Warehousing	16-19	n/a
+16.06.07	Database Backup and Recovery	16-20	n/a
+16.07	Computer Networks and Communications	16-20	n/a
+16.07.01	Types of Computer Networks	16-20	n/a
+16.07.02	Layered Architectures of Networks	16-21	n/a
+16.07.03	Open Systems Interconnection Model	16-21	n/a
+16.07.04	Encapsulation and Decapsulation	16-22	n/a
+16.07.05	Application Layer Protocols	16-22	n/a
+16.07.06	Design Techniques for Reliable and Efficient Network	16-22	n/a
+16.07.07	Internet Protocol Suite	16-23	n/a
+16.07.08	Wireless and Mobile Networks	16-23	n/a
+16.07.09	Security and Vulnerabilities	16-23	n/a
+16.08	User and Developer Human Factors	16-24	n/a
+16.08.01	User Human Factors	16-24	n/a
+16.08.02	Developer Human Factors	16-24	n/a
+16.09	Artificial Intelligence and Machine Learning	16-25	n/a
+16.09.01	Reasoning	16-25	n/a
+16.09.02	Learning	16-26	n/a
+16.09.03	Models	16-26	n/a
+16.09.04	Perception and Problem-Solving	16-27	n/a
+16.09.05	Natural Language Processing	16-27	n/a
+16.09.06	AI and Software Engineering	16-27	n/a
+17	Mathematical Foundations	17-1	n/a
+17.01	Basic Logic	17-1	n/a
+17.01.01	Propositional Logic	17-1	n/a
+17.01.02	Predicate Logic	17-3	n/a
+17.02	Proof Techniques	17-3	n/a
+17.02.01	Direct Proof	17-4	n/a
+17.02.02	Proof by Contradiction	17-4	n/a
+17.02.03	Proof by Induction	17-4	n/a
+17.02.04	Proof by Example	17-5	n/a
+17.03	Set, Relation, Function	17-5	n/a
+17.03.01	Set Operations	17-6	n/a
+17.03.02	Properties of Sets	17-6	n/a
+17.03.03	Relation and Function	17-7	n/a
+17.04	Graph and Tree	17-8	n/a
+17.04.01	Graph	17-8	n/a
+17.04.02	Tree	17-10	n/a
+17.05	Finite-State Machine	17-12	n/a
+17.06	Grammar 	17-13	n/a
+17.06.01	Language Recognition	17-14	n/a
+17.07	Number Theory 	17-14	n/a
+17.07.01	Types of Numbers	17-15	n/a
+17.07.02	Divisibility	17-15	n/a
+17.07.03	Prime Number	17-15	n/a
+17.07.04	Greatest Common Divisor	17-16	n/a
+17.08	Basics of Counting	17-16	n/a
+17.09	Discrete Probability	17-17	n/a
+17.10	Numerical Precision, Accuracy, and Error	17-18	n/a
+17.11	Algebraic Structures	17-19	n/a
+17.11.01	Group	17-19	n/a
+17.11.02	Ring	17-20	n/a
+17.12	Engineering Calculus	17-21	n/a
+17.13	New Advancements	17-21	n/a
+17.13.01	Computational Neurosciences	17-21	n/a
+17.13.02	Genomics	17-21	n/a
+18	Engineering Foundations	18-1	n/a
+18.01	The Engineering Process	18-1	n/a
+18.02	Engineering Design	18-2	n/a
+18.02.01	Engineering Design in Engineering Education	18-2	n/a
+18.02.02	Design as a Problem-Solving Activity	18-3	n/a
+18.03	Abstraction and Encapsulation	18-3	n/a
+18.03.01	Levels of Abstraction	18-4	n/a
+18.03.02	Encapsulation	18-4	n/a
+18.03.03	Hierarchy	18-4	n/a
+18.03.04	Alternate Abstractions	18-4	n/a
+18.04	Empirical Methods and Experimental Techniques	18-4	n/a
+18.04.01	Designed Experiment	18-5	n/a
+18.04.02	Observational Study	18-5	n/a
+18.04.03	Retrospective Study	18-5	n/a
+18.05	Statistical Analysis	18-5	n/a
+18.05.01	Unit of Analysis (Sampling Units), Population, and Sample	18-5	n/a
+18.05.02	Correlation and Regression	18-8	n/a
+18.06	Modeling, Simulation, and Prototyping	18-8	n/a
+18.06.01	Modeling	18-8	n/a
+18.06.02	Simulation	18-9	n/a
+18.06.03	Prototyping	18-9	n/a
+18.07	Measurement	18-10	n/a
+18.07.01	Levels (Scales) of Measurement	18-10	n/a
+18.07.02	Implications of Measurement Theory for Programming Languages	18-12	n/a
+18.07.03	Direct and Derived Measures	18-13	n/a
+18.07.04	Reliability and Validity	18-14	n/a
+18.07.05	Assessing Reliability	18-14	n/a
+18.07.06	Goal-Question-Metric Paradigm: Why Measure?	18-15	n/a
+18.08	Standards	18-15	n/a
+18.09	Root Cause Analysis	18-16	n/a
+18.09.01	Root Cause Analysis Techniques	18-16	n/a
+18.09.02	Root Cause Based Improvement	18-17	n/a
+18.10	Industry 04.0 and Software Engineering	18-17	n/a
